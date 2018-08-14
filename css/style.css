@@ -1,0 +1,276 @@
+body {
+    color: #413f3a;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+    
+}
+
+.row{
+    margin-bottom: 0px;
+}
+
+.page-footer{
+    color: #413f3a;
+    background-color: #929292;
+}  
+
+.footer{
+    padding: 0px 8% 0px 8%;
+    color: #413f3a;
+
+}
+
+.footer-copyright img{
+    background-color: #000;
+    border: 1px #413f3a solid;
+    border-radius: 50%;
+    height: 32px;
+    margin: 3px;
+}
+
+.social-footer{
+    background-color: white;
+    padding: 5px;
+}
+
+.footer input:not([type]), input[type="text"]:not(.browser-default), input[type="password"]:not(.browser-default), input[type="email"]:not(.browser-default), input[type="url"]:not(.browser-default), input[type="time"]:not(.browser-default), input[type="date"]:not(.browser-default), input[type="datetime"]:not(.browser-default), input[type="datetime-local"]:not(.browser-default), input[type="tel"]:not(.browser-default), input[type="number"]:not(.browser-default), input[type="search"]:not(.browser-default), textarea.materialize-textarea {
+
+    background-color: white;
+    border-radius: 10px;
+    height: 3rem;
+    width: 100%;
+    font-size: 16px;
+    margin: 0 8px 0 0;
+    padding: 0px 20px 0px 20px;
+    position: relative; 
+}
+#linkFooter{
+    font-size: 12px;
+    padding: 50px 0px 50px 0px;
+}
+
+#formFooter input{
+    left: -10px;
+}
+
+#linkFooter li{
+    padding: 3px 0px 3px 0px;
+}
+
+nav {
+    color: #000;
+    background-color: #fff;
+    padding: 0px 10% 0px 10%;
+    transition: .3s;
+    box-shadow: none;
+}
+
+nav .brand-logo {
+    color: #000;
+}
+nav a {
+    color: #000;
+}
+nav ul a {
+    color: #000;
+    padding: 0 10px;
+    font-size: smaller;
+}
+
+nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+    height: 93px;
+    line-height: 93px;
+}
+.brand-logo {
+    font-size: 2.1rem;
+    color: #e69221;
+    font-weight: bold;
+    line-height: 65px;
+    transition: ease-in .3s;
+}
+
+.brand-logo span{
+    color: #fff;
+}
+
+.brand-logo div{
+    color: #fff;
+    font-size: 9pt;
+    font-size: 1rem;
+    font-weight: 1;
+    line-height: 0px;
+    position: relative;
+
+}
+
+nav .brand-logo {
+    color: #e69221;
+    font-weight: bold;
+    line-height: 65px;
+    transition: ease-in .3s;
+}
+
+nav .brand-logo span{
+    color: #5e5e5e;
+}
+
+nav .brand-logo div{
+    color: #000;
+    font-size: 9pt;
+    font-weight: 1;
+    line-height: 0px;
+}
+
+.min-nav{
+    font-size: 8pt;
+}
+
+.min-text{
+    font-size: 7pt;
+}
+
+
+.shop{
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+    border: 2px #e69221 solid;
+    cursor: pointer;
+    font-size: 8pt;
+    transition: .3s;
+
+}
+#getYourText > .shop{
+    margin: 40px 0px 0px 0px;
+    display: inline-block;
+}
+#shopbtn > .shop {
+   margin-left: 80px;
+}
+#shopbtn:hover > .shop {
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: 0px;
+        transition: .3s;
+}
+
+
+.shopping-cart{
+    height: 24px;
+    width: 24px;
+}
+.shopping-cart-noti{
+    color: white;
+    background-color: #79adf9;
+    padding: 2px 7px 2px 7px;
+    border-radius: 50px;
+    position: relative;
+    top: 4px;
+    left: -7px;
+}
+
+
+.slider .slides li .caption {
+    left: 10%;
+    font-weight: bold;
+}
+
+.slider .slides li .caption h3::after {
+    position: relative;
+    top: 10px;
+    margin: 10px 0px 30px 0px;
+    content: ""; 
+    width: 80px;
+    display: block;
+    border-bottom: 7px #413f3a solid;
+}
+
+.slider .slides li .caption .shop {
+    margin-left: 0px;
+    color: #413f3a;
+}
+.slide-text{
+    color: #413f3a;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+#firstMain{
+    padding: 50px 0px 50px 0px;
+}
+
+#secondMain{
+    background-color: #f6f6f5;
+    padding: 50px 0px 50px 0px;
+}
+#secondMainImg{
+    margin-top: 50px;
+}
+
+#thirdMain{
+    
+    background-image: url('../img/bgThird.jpg');
+    display: inline-block;
+    height: 270px;
+    color: #fff;
+    padding: 50px 0px 50px 0px;
+}
+
+#secondMainImg img{
+    padding: 8px 8px 8px 8px;
+    height: 70px;
+    width: 70px;
+}
+#how-it-works p{
+    position: relative;
+    text-align: center;
+    font-size: 12pt;
+    width: 40%;
+    margin-left: 30%;
+    font-weight: bold;
+    border-bottom: 4px #e69221 solid;
+}
+
+
+.how-it-works-img{
+    height: 80px;
+    width: 80px;
+    padding: 10px 10px 10px 10px;
+    border: 1px #413f3a dashed;
+    border-radius: 50%;
+}
+
+
+@media(max-width: 1280px){
+    nav {
+        padding: 0px 2% 0px 2%;
+        transition: .3s;
+    }
+}
+
+@media(max-width: 1068px){
+    .shop{
+        margin-left: 0px;  
+        transition: .3s;
+    }
+}
+
+@media(max-width: 600px){
+    nav .brand-logo div{
+        width: 170px;
+        padding: 0px 0px 0px 0px;
+        transition: .3s;
+    }
+
+    #linkFooter{
+        font-size: 14px;
+        padding: 50px 0px 50px 0px;
+    }
+    
+}
