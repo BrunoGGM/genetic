@@ -13,6 +13,10 @@ main {
     margin-bottom: 0px;
 }
 
+#productos{
+    min-height: 100px;
+    border-right: 2px dashed;
+}
 .page-footer{
     color: #413f3a;
     background-color: #929292;
@@ -23,6 +27,15 @@ main {
     color: #413f3a;
 
 }
+
+.accent-text{
+    color: #e69221;
+}
+.super {
+    box-shadow: inset 0px -6px 0px 0px #e69221;
+    height: 66px;
+  }
+
 
 .footer-copyright img{
     background-color: #000;
@@ -132,6 +145,43 @@ nav .brand-logo div{
 .min-text{
     font-size: 7pt;
 }
+.min-text2{
+    font-size: 10pt;
+}
+/*impares*/
+.goalsTable div:nth-child(2n+1){
+    border: 1px #e69221 solid;
+    color: #e69221 ;
+    padding: 8px;
+    margin: 5px;
+    height: 49px;
+}
+/*pares*/
+.goalsTable div:nth-child(2n){
+    
+    border: 1px black solid;
+    padding: 8px;
+    margin: 5px;
+    height: 49px;
+
+}
+
+.goalsTableContent div:nth-child(2n+1){
+    
+    color: #e69221 !important;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.goalsTableContent div:nth-child(2n){
+    
+    color: black;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
 
 
 .shop{
@@ -238,6 +288,28 @@ nav .brand-logo div{
 }
 
 
+#sport{
+    background-image: url(../img/sport.jpg);
+    width: 100%;
+    padding: 0px;
+}
+
+#sport > div{
+    padding: 20px;
+  
+}
+#life{
+    padding: 50px;
+    background-color: red;
+    width: -moz-max-content;
+    width: max-content;  
+    background-color: rgba(234, 131, 31, 0.6);
+}
+#selectGoals{
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 666px;
+}
+    
 .how-it-works-img{
     height: 80px;
     width: 80px;
