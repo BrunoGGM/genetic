@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Bruno Gómez">
+    <meta itemprop="publisher" content="">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import CSS-->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta name="theme-color" content="#e69221">
+    <title>MyGen - Activate</title>
+</head>
+
+<body style="overflow-x: hidden;">
+    <!--============================== INICIO NAV ===========================-->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo bold">My<span>GEN</span>
+                    <div>Supplemented by TAAG Genetics</div>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                        <li><a href="#" class="min-nav right">RODRIGO</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+    <!--============================== FIN NAV ===========================-->
+
+
+    <!--============================== MAIN ===========================-->
+
+<main class="bone">
+    <div class="row">
+        <div class="container">
+            <div class="col s12 white" id="activateKit">
+               <div class="orange">
+                    <div class="white-text" id="stepsActivateKit"> <span class="bold-text">ACTIVATE > </span><span>ASSESSMENT > </span><span>DONE!</span></div>
+               </div>
+               <div class="col s12 center" id="activate">
+                     <div class="col s12">
+                            <h5>WELCOME TO KIT ACTIVATION! LET’S GET STARTED...</h5>
+                            <p>Enter your MyGEN barcode</p>
+                            <img src="img/activateKitImgBar.png" height="200" alt="">
+                     </div>   
+                    <div class="col s12 m4 push-m4">
+                        <input type="text" placeholder="Barcode" required>
+                        
+                    </div>
+                    <div class="col s12" style="margin-top: 40px">
+                            <a href="#modal1" class="shop black-text modal-trigger">CONTINUE</a>
+                    </div>
+               </div>
+            </div>
+        </div>
+
+ <!-- Modal Structure -->
+ <div id="modal1" class="modal">
+        <div class="modal-footer">
+            <h6 class="col s6 center-align bold-text">PRODUCTS LINKED TO THIS MyGEN BOX</h6>
+            <a href="#!" class="modal-close waves-effect btn-flat col s6 right-align"><li class="material-icons">close</li></a>
+
+        </div>
+        <div class="modal-content">
+            <div class="col s12 m9" id="productos">
+                <div class="productCart bold-text col s12" id="producto1">
+                    <div class="col 12 m8">                
+                        <span class="accent-text bold-text">POWER</span> - STRENGTH
+                        <P class="light">ACTN3 gene</P>     
+                    </div>
+                    <div class="col s12 m4">
+                        
+                    </div>
+                </div>
+                <div class="productCart bold-text col s12" id="producto2">
+                    <div class="col 12 m8">                
+                        <span class="accent-text">POWER</span> - RECOVERY TEST
+                        <P class="light">AMPD1 gene</P>     
+                    </div>
+                    <div class="col s12 m4">
+                        
+                    </div>
+                </div>
+                <div class="productCart bold-text col s12" id="producto3">
+                    <div class="col 12 m7 l8">                
+                        <span class="accent-text">POWER</span> - CAFFEINE
+                        <P class="light">CYP1A2 gene</P>     
+                    </div>
+                    <div class="col s12 m4 l3">
+                        
+                    </div>
+                </div>                                   
+            </div>
+            <div class="col s12 m4 l3 center-align">
+                <a href="#" class="shop modal-close black-text">OK</a>
+                <a href="#!" class="col s12 waves-effect btn-flat black-text min-text" style="margin-bottom: 20px">Something wrong?</a>   
+            </div>
+
+        </div>
+    </div>
+ <!-- Modal Structure -->        
+    </div>
+</main>
+
+
+
+    <!--============================== MAIN ===========================-->
+
+<!--============================== FOOTER ===========================-->          
+<footer class="page-footer white black-text" id="whiteFooter">
+    <div class="footer">
+        <div class="row">
+            <div class="col l3 s12">
+                <a href="#!" class="brand-logo bold grey-text text-darken-3">My<span class="grey-text">GEN</span>
+                    <div class="grey-text text-darken-3">Supplemented by TAAG Genetics</div>
+                </a>
+            </div>
+            <div class="col l9 s12 black-text right-align" id="linkFooter">
+                <a href="">Privacy policy</a>
+                <a href="">Terms of use</a>
+                <a href="">Contact</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright white black-text">
+        <div class="container right-align">
+            Copyright 2018 © TAAG Genetics. All rights reserved
+        </div>
+    </div>
+</footer>
+    <!--============================== FOOTER ===========================-->     
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/addCart.js"></script>
+    <script src="js/order.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.modal').modal();
+            $('.sidenav').sidenav();
+            $('.tooltipped').tooltip();
+            $('.collapsible').collapsible();
+            new WOW().init();
+        });
+    </script>
+</body>
+
+</html>

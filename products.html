@@ -23,28 +23,28 @@
         <div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper">
-                    <a href="#!" class="brand-logo bold">My<span>GEN</span><div>Supplemented by TAAG Genetics</div></a>      
+                    <a href="index.html" class="brand-logo bold">My<span>GEN</span><div>Supplemented by TAAG Genetics</div></a>      
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="" class="super">PRODUCTS</a></li>
+                        <li><a href="products.html" class="super">PRODUCTS</a></li>
                         <li><a href="">HOW IT WORKS</a></li>
                         <li><a href="">SUCCESS STORIES</a></li>
-                        <li><a href="">BECOME A COACH</a></li>
+                        <li><a href="become.html">BECOME A COACH</a></li>
                         <li><a href="#!" id="shopbtn"><span class="shop">SHOP NOW</span></a></li>
                         <li><a href="" class="min-nav">SIGN IN</a></li>
                         <li><a href="" class="min-nav">ACTIVATE KIT</a></li>
                         <li><a href="" id="shopping-cart-btn"><img src="img/icons/shopping-cart.svg" class="shopping-cart" alt="shopping-cart"><span class="shopping-cart-noti">0</span></a></li>
-                        <li><a href="" class="min-nav">Help</a></li>
+                        <li><a href="" class="min-nav">HELP</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
 <!-- mobile-demo -->    
         <ul class="sidenav" id="mobile-demo">
-                <li><a href="">PRODUCTS</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
                 <li><a href="">HOW IT WORKS</a></li>
                 <li><a href="">SUCCESS STORIES</a></li>
-                <li><a href="">BECOME A COACH</a></li>
+                <li><a href="become.html">BECOME A COACH</a></li>
                 <li><a href="#!" id="shopbtn"><span>SHOP NOW</span></a></li>
                 <li><a href="" class="min-nav">SIGN IN</a></li>
                 <li><a href="" class="min-nav">ACTIVATE KIT</a></li>
@@ -61,12 +61,12 @@
           <li>
             <img src=""> 
             <div class="caption left-align">
-                <h3 class="slide-text bold-text">
+                <h4 class="slide-text bold-text">
                 Genetically tailored <br>
                 supplements for <br>
                 achieving your goals
-                </h3>
-              <h5 class="slide-text light">Your genetic code is complicated. <br> But we use it for making the achievement <br> of your goals simple</h5><br>
+                </h4>
+              <h6 class="slide-text light">Your genetic code is complicated. <br> But we use it for making the achievement <br> of your goals simple</h6><br>
             
             </div>
           </li>
@@ -95,7 +95,8 @@
         <div class="container">
             <h5 class="bold-text">THE BEST VERSION OF YOU STARTS WITH MyGEN TESTS <br> AND SUPPLEMENTS</h5> <br>
             <p>Select the categories, goals and traits you want to improve and we’ll do the rest! <br>
-            Depending on the number of tests selected, important discounts you will get.</p>
+            Depending on the number of tests selected, important discounts you will get.</p> <br>
+            <center><p class="bold-text">MyGEN categories</p></center>
             <div id="secondMainImg" class="col s12">
                 <div class="col s6 m3">
                     <img src="img/icons/muscles.svg"  class="wow fadeIn" data-wow-delay=".1s" alt="">
@@ -118,7 +119,7 @@
     </div>
 
     <div class="col s12 center-align" id="sport">
-        <div class="col s12 m6 l6">
+        <div class="col s12 m12 l6">
             <div class="col s10 m8 l8 push-s1 push-m2 push-l2" id="life">
                 <p class="bold-text left-align">SPORTS AND <br> ACTIVE LIFE</p>
                 <p class="left-align">
@@ -138,7 +139,7 @@
                 </p>
             </div>
         </div>
-        <div class="col s12 m6 l6 hide-on-med-and-down" id="selectGoals">
+        <div class="col s12 m12 l6 hide-on-small-only" id="selectGoals">
             <div class="col s12 bold-text ">
                 <span class="left">SELECT YOUR GOALS - TRAITS</span>
                 <!-- Modal Trigger -->
@@ -147,12 +148,21 @@
             </div>
             <p class="col s12 left-align min-text2">Todos los genes utilizados en los productos MyGEN han sido cuidadosamente seleccionados y cuentan con
                     numerosa evidencia científica. Los genes han sido ordenados de acuerdo a su relevancia para el objetivo, siendo
-                    el numero 1 el gen con mayor impacto relativo en el objetivo.</p>
+                    el numero 1 el gen con mayor impacto relativo en el objetivo. 
+                    
+                <a id="helpGoals" class="tooltipped accent-text" style="font-size: 20px" data-position="left" 
+                data-tooltip="El Ranking se construye en base a los siguientes puntos: <br>
+                1. Evidencia científica del impacto del gen y sus variantes en el objetivo. <br>
+                2. Distribución de la variantes del gen en la población. <br>
+                3. Impacto de la alimentación sobre la funcionalidad del gen <br>">
+                    <i class="material-icons"  >help_outline</i>
+                </a>
+            </p> <br><br>
             <p class="col s12 left-align min-text2">Puedes comenzar seleccionando un gen y de acuerdo a tu genotipo formularemos tu suplemento personalizado.
                 Sin embargo, mientras más test genéticos te realices, más información recopilaremos y las formulaciones de tus
                 suplementos serán aún más efectivas.</p>
 
-             <div class="col s12" >
+             <ul class="col s12" >
 
                 <div class="col s12 ">
                     <div class="col s1 m1"></div>
@@ -165,39 +175,51 @@
                     </div>
                 </div>
 
-                <div class="col s12 goalsTable">
+                <div class="col s12 goalsTable collapsible">
 
-                    <div class="col s1 m1"><label><input type="checkbox" class="producto" id="1" /><span></span></label></div>
-                    <div class="col s11 m10 goalsTableContent bold-text">
-                        <div class="col s1">1</div>
-                        <div class="col s2">POWER</div>
-                        <div class="col s2">STRENGTH</div>
-                        <div class="col s2">ACTN3</div>
-                        <div class="col s4"><a href="" >See sample report</a></div>
-                    </div>                  
-                    <span class="col s12 min-text2 left-align">  
-                        Are you built for speed and power? Your ACTN3 gene has the answer. This gene codes the protein α-actinin-3, which is
-                        used in fast twitch muscle contraction. With this insight we can provide you an efficient supplement to enhance your
-                        strength performance.
-                   </span> 
+                    <li>
+                        <div class="col s1 m1"><label><input type="checkbox" class="producto collapsible-header" id="1" /><span></span></label></div>
+                        <div class="col s11 m10 goalsTableContent bold-text ">
+                            <div class="col s1">1</div>
+                            <div class="col s2">POWER</div>
+                            <div class="col s2">STRENGTH</div>
+                            <div class="col s2">ACTN3</div>
+                            <div class="col s4"><a href="" class="accent-text" >See sample report</a></div>
+                        </div>  
+                        <span class="col s12 min-text2 left-align collapsible-body">  
+                            Are you built for speed and power? Your ACTN3 gene has the answer. This gene codes the protein α-actinin-3, which is
+                            used in fast twitch muscle contraction. With this insight we can provide you an efficient supplement to enhance your
+                            strength performance.
+                       </span>  
+                    </li>
+ 
                    <br>
-                    <div class="col s1 m1"><label><input type="checkbox" class="producto" id="2"/><span></span></label></div>
-                    <div class="col s11 m10 goalsTableContent bold-text">
-                        <div class="col s1">2</div>
-                        <div class="col s2">POWER</div>
-                        <div class="col s2">RECOVERY</div>
-                        <div class="col s2">AMPD1</div>
-                        <div class="col s4"><a href="" >See sample report</a></div>
-                    </div>
-
-                    <div class="col s1 m1"><label><input type="checkbox" class="producto" id="3" /><span></span></label></div>
-                    <div class="col s11 m10 goalsTableContent bold-text">
-                        <div class="col s1">3</div>
-                        <div class="col s2">POWER</div>
-                        <div class="col s2">CAFFEINE</div>
-                        <div class="col s2">CYP1A2</div>
-                        <div class="col s4"><a href="" >See sample report</a></div>
-                    </div>
+                    <li>
+                        <div class="col s1 m1"><label><input type="checkbox" class="producto collapsible-header" id="2"/><span></span></label></div>
+                        <div class="col s11 m10 goalsTableContent bold-text">
+                            <div class="col s1">2</div>
+                            <div class="col s2">POWER</div>
+                            <div class="col s2">RECOVERY</div>
+                            <div class="col s2">AMPD1</div>
+                            <div class="col s4"><a href="" class="accent-text">See sample report</a></div>
+                        </div>
+                        <span class="col s12 min-text2 left-align collapsible-body">  
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem deleniti nostrum, maxime adipisci ut? Dolor harum, minima ducimus a qui eveniet eos. Porro ducimus perspiciatis ipsam suscipit animi deserunt.
+                       </span>                         
+                    </li>
+                    <li>
+                        <div class="col s1 m1"><label><input type="checkbox" class="producto collapsible-header" id="3" /><span></span></label></div>
+                        <div class="col s11 m10 goalsTableContent bold-text">
+                            <div class="col s1">3</div>
+                            <div class="col s2">POWER</div>
+                            <div class="col s2">CAFFEINE</div>
+                            <div class="col s2">CYP1A2</div>
+                            <div class="col s4"><a href="" class="accent-text" >See sample report</a></div>
+                        </div>
+                        <span class="col s12 min-text2 left-align collapsible-body">  
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem deleniti nostrum, maxime adipisci ut? Dolor harum, minima ducimus a qui eveniet eos. Porro ducimus perspiciatis ipsam suscipit animi deserunt.
+                        </span>     
+                    </li>
                 </div>
 
              </div>   
@@ -214,7 +236,7 @@
             <div class="col s12 m9" id="productos">
                 <div class="productCart bold-text col s12" id="producto1">
                     <div class="col 12 m8">                
-                        <span class="accent-text">POWER</span> - STRENGTH
+                        <span class="accent-text bold-text">POWER</span> - STRENGTH
                         <P class="light">ACTN3 gene</P>     
                     </div>
                     <div class="col s12 m4">
@@ -229,11 +251,20 @@
                     <div class="col s12 m4">
                         <a href="#!" class="shop black-text removeCart" id="2">REMOVE</a>
                     </div>
-                </div>               
+                </div>
+                <div class="productCart bold-text col s12" id="producto3">
+                    <div class="col 12 m7 l8">                
+                        <span class="accent-text">POWER</span> - CAFFEINE
+                        <P class="light">CYP1A2 gene</P>     
+                    </div>
+                    <div class="col s12 m4 l3">
+                        <a href="#!" class="shop black-text removeCart" id="3">REMOVE</a>
+                    </div>
+                </div>                                   
             </div>
-            <div class="col s12 m3">
+            <div class="col s12 m4 l3 center-align">
                 <a href="#!" class="modal-close waves-effect btn-flat black-text col s12" style="margin-bottom: 20px">ADD MORE TESTS</a>
-                <a href="" class="shop black-text">PROCEDED TO ORDER</a>
+                <a href="order.html" class="shop black-text">PROCEDED TO ORDER</a>
             </div>
 
         </div>
@@ -243,83 +274,87 @@
 
 <!--============================== MAIN ===========================--> 
 
+
 <!--============================== FOOTER ===========================-->          
-    <footer class="page-footer">
-        <div class="footer">
-        <div class="row">
-            <div class="col l3 s12">
-            <a href="#!" class="brand-logo bold">My<span>GEN</span><div>Supplemented by TAAG Genetics</div></a> 
+<footer class="page-footer">
+    <div class="footer">
+    <div class="row">
+        <div class="col l3 s12">
+        <a href="#!" class="brand-logo bold">My<span>GEN</span><div>Supplemented by TAAG Genetics</div></a> 
+        </div>
+        <div class="col l9 s12" id="linkFooter">
+            <div class="black-text">
+                <ul>
+                    <li><a class="black-text bold-text" href="#!">PRODUCTS</a></li> <br>
+                    <li><a class="black-text" href="#!">Genetic tests</a></li>
+                    <li><a class="black-text" href="#!">Supplements</a></li>
+                    <li><a class="black-text" href="#!">How it works</a></li>
+                    <li><a class="black-text" href="#!">Success stories</a></li>
+                </ul>
             </div>
-            <div class="col l9 s12" id="linkFooter">
-                <div class="col s6 m4 l2 black-text">
-                    <ul>
-                        <li><a class="black-text bold-text" href="#!">PRODUCTS</a></li> <br>
-                        <li><a class="black-text" href="#!">Genetic tests</a></li>
-                        <li><a class="black-text" href="#!">Supplements</a></li>
-                        <li><a class="black-text" href="#!">How it works</a></li>
-                        <li><a class="black-text" href="#!">Success stories</a></li>
-                    </ul>
-                </div>
-                <div class="col s6 m4 l2">
-                    <ul>
-                        <li><a class="black-text bold-text" href="#!">COMPANY</a></li> <br>
-                        <li><a class="black-text" href="#!">About</a></li>
-                        <li><a class="black-text" href="#!">Blog</a></li>
-                        <li><a class="black-text" href="#!">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col s6 m4 l2">
-                    <ul>
-                        <li><a class="black-text bold-text" href="#!">RESOURCES</a></li> <br>
-                        <li><a class="black-text" href="#!">Help</a></li>
-                        <li><a class="black-text" href="#!">Privacy policy</a></li>
-                        <li><a class="black-text" href="#!">Terms of use</a></li>
-                    </ul>
-                </div>
-                <div class="col s6 m4 l2">
-                    <ul>
-                        <li><a class="black-text bold-text" href="#!">PARTNERS</a></li> <br>
-                        <li><a class="black-text" href="#!">Become a coach</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col s6 m4 l2">
-                    <ul>
-                        <li><a class="grey-text text-lighten-3 bold-text" href="#!">RELATED PRODUCTS</a></li> <br>
-                        <li><a class="grey-text text-lighten-3" href="#!">Ancestry</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Pharmacogenetics</a></li>
+            <div class="">
+                <ul>
+                    <li><a class="black-text bold-text" href="#!">COMPANY</a></li> <br>
+                    <li><a class="black-text" href="#!">About</a></li>
+                    <li><a class="black-text" href="#!">Blog</a></li>
+                    <li><a class="black-text" href="#!">Contact</a></li>
+                </ul>
+            </div>
+            <div class="">
+                <ul>
+                    <li><a class="black-text bold-text" href="#!">RESOURCES</a></li> <br>
+                    <li><a class="black-text" href="#!">Help</a></li>
+                    <li><a class="black-text" href="#!">Privacy policy</a></li>
+                    <li><a class="black-text" href="#!">Terms of use</a></li>
+                </ul>
+            </div>
+            <div class="">
+                <ul>
+                    <li><a class="black-text bold-text" href="#!">PARTNERS</a></li> <br>
+                    <li><a class="black-text" href="#!">Become a coach</a></li>
+                </ul>
+            </div>
+            
+            <div class="">
+                <ul>
+                    <li><a class="grey-text text-lighten-3 bold-text" href="#!">RELATED PRODUCTS</a></li> <br>
+                    <li><a class="grey-text text-lighten-3" href="#!">Ancestry</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Pharmacogenetics</a></li>
 
-                    </ul>
-                </div>
+                </ul>
+            </div>
 
-                <div class="col s12 m4 l2 white-text">
+            <div class="white-text">
+                <ul id="form">
                     <p>CURIOUS TO LEARN MORE?</p>
                     <p class="black-text">Join our newsletter to receive updates on actionable genetics</p>
                     <form action="" id="formFooter" name="formFooter">
-                        <div class="input-field col s12">
-                            <input placeholder="YourEmail" id="" type="text" class="validate">
+                        <div class="input-field col s7">
+                            <input placeholder="YourEmail" id="" type="text" class="validate">           
                         </div>
-                        <a href="" class="shop white-text">Sign Up</a>
+                        <a href="" class="shop white-text col s3 push-s1">Sign Up</a>
+                       
                     </form>
-                </div>
+                </ul>
             </div>
         </div>
+    </div>
+    </div>
+    <div class="footer-copyright">
+    <div class="container">
+    <br><hr class="white-text"><br> 
+    <span class="black-text">Copyright 2018 © TAAG Genetics. All rights reserved.</span>
+    <div class="right">
+        <div class="social-footer">
+            <a href=""><img src="img/icons/twitter-logo-button.svg" alt=""></a>
+            <a href=""><img src="img/icons/facebook-logo-button.svg" alt=""></a>
+            <a href=""><img src="img/icons/instagram-logo.svg" alt=""></a>
         </div>
-        <div class="footer-copyright">
-        <div class="container">
-        <br><hr class="white-text"><br> 
-        <span class="black-text">Copyright 2018 © TAAG Genetics. All rights reserved.</span>
-        <div class="right">
-            <div class="social-footer">
-                <a href=""><img src="img/icons/twitter-logo-button.svg" alt=""></a>
-                <a href=""><img src="img/icons/facebook-logo-button.svg" alt=""></a>
-                <a href=""><img src="img/icons/instagram-logo.svg" alt=""></a>
-            </div>
-        </div>
-        </div>
-        </div>
-    </footer>
-<!--============================== FOOTER ===========================-->          
+    </div>
+    </div>
+    </div>
+</footer>
+<!--============================== FOOTER ===========================-->                 
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
@@ -331,10 +366,12 @@
             $('.sidenav').sidenav();
             $('.slider').slider({
                 indicators: false,
-                height: 470
+                height: 410
             });
             new WOW().init();
             $('.modal').modal();
+            $('.collapsible').collapsible();
+            $('.tooltipped').tooltip();
         });
     </script>
 </body>

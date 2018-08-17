@@ -9,7 +9,7 @@ $(document).ready(function(){
                 }
             }
         }else{    
-            carrito.push(id);      
+            carrito.push(id);    
         }
         return numProductos = carrito.length; 
         
@@ -26,6 +26,7 @@ $(document).ready(function(){
             if(carrito[x] === id){
                 numProductos--;
                 $( "#producto"+id ).remove();
+                $("#" + id).prop('checked', false); 
                 $('.shopping-cart-noti').html(numProductos);
                 carrito.splice(x, 1);
             }

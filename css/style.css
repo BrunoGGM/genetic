@@ -1,12 +1,44 @@
+@font-face {
+font-family: HelveticaNeue;
+src: url('../fonts/HELVET.TTF'),
+
+
+}
+
+html{
+    font-size: 13px;
+}
 body {
+    font-family: 'HelveticaNeue', sans-serif;
     color: #413f3a;
     display: flex;
     min-height: 100vh;
-    flex-direction: column;
+    flex-direction: column;   
 }
+
+.bone{
+   background-color:  #f2f2f2;
+}
+
+#welcome{
+    margin: 30px 0px 30px 0px;
+    padding: 20px;
+}
+
+.navbar-fixed {
+    height: 93px;
+}
+#helpGoals:hover{
+    cursor: pointer;
+}
+
+#helpGoals:hover{
+    color: rgb(143, 143, 143);
+}
+
 main {
     flex: 1 0 auto;
-    
+    font-size: 14px;  
 }
 
 .row{
@@ -16,11 +48,73 @@ main {
 #productos{
     min-height: 100px;
     border-right: 2px dashed;
+    margin-bottom: 30px;
+}
+#unlock{
+    padding: 30px 20px 30px 20px;
+    background-color: #fff1df;
+}
+
+#unlock div{
+    padding: 20px;
+    border-radius: 15px;
+    min-height: 110px;
+}
+#costumers{
+    padding: 50px 20px 40px 20px;
+    background-color: #fffff2;
+}
+
+#aboutYou{
+    padding: 5px 20px 5px 20px;
+    margin: 10px 0px 0px 0px;
+    background-color: #fff;
+}
+
+#aboutYou .collapsible-header {
+    display: webkit block !important;
+    display: -moz-inline-box !important;
+    display: inline-block !important;
+    display: flex;
+    display: inline-block !important;
+    border: 0px #bdbdbd solid;
+    
+}
+
+#shipping{
+    padding: 5px 20px 5px 20px;
+    margin: 10px 0px 0px 0px;
+    background-color: #fff;
+}
+
+#shipping .collapsible-header {
+    display: webkit block !important;
+    display: -moz-inline-box !important;
+    display: inline-block !important;
+    display: flex;
+    display: inline-block !important;
+    border: 0px #bdbdbd solid;
+    
+}
+#summaryHead{
+    margin-left: 10px;
+    padding: 0px 0px 15px 0px;
+}
+
+#payment{
+    padding: 5px 20px 5px 20px;
+    margin: 10px 0px 0px 0px;
+    background-color: #fff;
 }
 .page-footer{
     color: #413f3a;
     background-color: #929292;
-}  
+} 
+
+.container2{
+    margin: 0 auto;
+    width: 90%;
+}
 
 .footer{
     padding: 0px 8% 0px 8%;
@@ -32,7 +126,7 @@ main {
     color: #e69221;
 }
 .super {
-    box-shadow: inset 0px -6px 0px 0px #e69221;
+    box-shadow: inset 0px -5px 0px 0px #e69221;
     height: 66px;
   }
 
@@ -50,10 +144,50 @@ main {
     padding: 5px;
 }
 
-.footer input:not([type]), input[type="text"]:not(.browser-default), input[type="password"]:not(.browser-default), input[type="email"]:not(.browser-default), input[type="url"]:not(.browser-default), input[type="time"]:not(.browser-default), input[type="date"]:not(.browser-default), input[type="datetime"]:not(.browser-default), input[type="datetime-local"]:not(.browser-default), input[type="tel"]:not(.browser-default), input[type="number"]:not(.browser-default), input[type="search"]:not(.browser-default), textarea.materialize-textarea {
-
-    background-color: white;
+.next{
+    padding: 12px 30px 12px 30px;
     border-radius: 10px;
+    border: 1px #bdbdbd solid;
+    cursor: pointer;
+    font-size: 8pt;
+    transition: .3s;
+    color: #5d5d5d;
+    display: inline-block;
+}
+
+#nextDiv .collapsible-header {
+
+    display: inline-block !important;
+    border: 1px #bdbdbd solid;
+
+}
+
+#nextDiv{
+
+    margin: 30px 0px 30px 0px;
+}
+
+.collapsible-body {
+    border: 0px #bdbdbd solid;
+    display: none;
+    border-bottom: 0px solid #ddd;
+}
+
+.collapsible-header{
+    display: webkit block !important;
+    display: -moz-inline-box !important;
+    display: inline-block !important;
+    display: flex;
+    display: inline-block !important;
+    border: 0px #bdbdbd solid;
+    border-bottom: 0px solid #ddd;
+    padding: 0px;
+}
+
+.footer  input[type="text"] {
+
+    background-color: white !important;
+    border-radius: 10px !important;
     height: 3rem;
     width: 100%;
     font-size: 16px;
@@ -62,9 +196,31 @@ main {
     position: relative; 
 }
 #linkFooter{
+
     font-size: 12px;
     padding: 50px 0px 50px 0px;
 }
+
+#linkFooter ul{
+    margin: 5px;
+    float: left;
+    width: 12%;
+}
+
+#linkFooter ul#form{
+    margin: 5px;
+    float: left;
+    width: 30%;
+}
+
+#linkFooter ul#form .shop{
+    position: relative;
+    top: 10px;
+    height: 41px;  
+    padding-top: 10px;
+}
+
+
 
 #formFooter input{
     left: -10px;
@@ -90,7 +246,7 @@ nav a {
 }
 nav ul a {
     color: #000;
-    padding: 0 10px;
+    padding: 0 9px;
     font-size: smaller;
 }
 
@@ -104,6 +260,7 @@ nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
     font-weight: bold;
     line-height: 65px;
     transition: ease-in .3s;
+    font-size: 32px;
 }
 
 .brand-logo span{
@@ -139,14 +296,20 @@ nav .brand-logo div{
 }
 
 .min-nav{
-    font-size: 8pt;
-}
-
-.min-text{
     font-size: 7pt;
+}
+.none{
+    text-decoration:line-through;
+}
+.min-text{
+    font-size: 8pt;
 }
 .min-text2{
     font-size: 10pt;
+}
+
+.min-text3{
+    font-size: 14pt;
 }
 /*impares*/
 .goalsTable div:nth-child(2n+1){
@@ -186,12 +349,23 @@ nav .brand-logo div{
 
 .shop{
     padding: 8px 16px 8px 16px;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 2px #e69221 solid;
     cursor: pointer;
     font-size: 8pt;
     transition: .3s;
 
+}
+
+.shopWhite{
+    padding: 6px 25px 7px 25px;
+    border-radius: 10px;
+    border: 2px #fff solid;
+    cursor: pointer;
+    font-size: 13pt;
+    transition: .3s;
+    background: white;
+    color: #ffa941;
 }
 #getYourText > .shop{
     margin: 40px 0px 0px 0px;
@@ -200,18 +374,11 @@ nav .brand-logo div{
 #shopbtn > .shop {
    margin-left: 80px;
 }
-#shopbtn:hover > .shop {
-        text-align: center;
-        padding-left: 50px;
-        padding-right: 50px;
-        margin-left: 0px;
-        transition: .3s;
-}
 
 
 .shopping-cart{
-    height: 24px;
-    width: 24px;
+    height: 20px;
+    width: 20px;
 }
 .shopping-cart-noti{
     color: white;
@@ -229,14 +396,14 @@ nav .brand-logo div{
     font-weight: bold;
 }
 
-.slider .slides li .caption h3::after {
+.slider .slides li .caption h4::after {
     position: relative;
     top: 10px;
     margin: 10px 0px 30px 0px;
     content: ""; 
-    width: 80px;
+    width: 60px;
     display: block;
-    border-bottom: 7px #413f3a solid;
+    border-bottom: 7px solid currentColor;
 }
 
 .slider .slides li .caption .shop {
@@ -251,8 +418,10 @@ nav .brand-logo div{
     font-weight: bold;
 }
 
+
 #firstMain{
-    padding: 50px 0px 50px 0px;
+    padding: 30px 0px 50px 0px;
+   
 }
 
 #secondMain{
@@ -277,6 +446,36 @@ nav .brand-logo div{
     height: 70px;
     width: 70px;
 }
+#benefits p{
+    position: relative;
+    text-align: center;
+    font-size: 12pt;
+}
+
+#benefits div{
+    min-height: 250px;
+}
+
+.benefits-img{
+    height: 70px;
+    width: 70px;
+    padding: 5px 5px 5px 5px;
+
+}
+
+#howToJoinUs{
+    padding: 50px 0px 50px 0px;
+    background-image: url('../img/HOW-TO-JOIN-US.jpg');
+    background-color: #02151c;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#howToJoinUsContent .shop{
+    margin-top: 30px;
+    display: inline-block;
+}
+
 #how-it-works p{
     position: relative;
     text-align: center;
@@ -285,6 +484,40 @@ nav .brand-logo div{
     margin-left: 30%;
     font-weight: bold;
     border-bottom: 4px #e69221 solid;
+}
+
+#yourSuccess{
+    padding: 50px 0px 50px 0px;
+    background-color: #f9fafa;
+}
+
+#costumerResults{
+    padding: 50px 0px 50px 0px;
+    background-color: #fff;
+
+}
+
+#myGenPro{
+    padding: 50px 0px 50px 0px;
+    background-image: url('../img/bgMyGenPro.jpg');
+}
+
+#myGenOnline{
+    padding: 50px 0px 50px 0px;
+    background-color: #fff;
+}
+
+#marketingMaterial{
+    padding: 50px 0px 0px 0px;
+    background-color: #e69221;
+}
+
+.how-it-works-img{
+    height: 70px;
+    width: 70px;
+    padding: 15px 15px 15px 15px;
+    border: 1px #413f3a dashed;
+    border-radius: 50%;
 }
 
 
@@ -310,15 +543,115 @@ nav .brand-logo div{
     height: 666px;
 }
     
-.how-it-works-img{
-    height: 80px;
-    width: 80px;
-    padding: 10px 10px 10px 10px;
-    border: 1px #413f3a dashed;
-    border-radius: 50%;
+
+.collapsible{
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0),0 3px 1px -2px rgba(0, 0, 0, 0),0 1px 5px 0 rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0),0 3px 1px -2px rgba(0, 0, 0, 0),0 1px 5px 0 rgba(0, 0, 0, 0);
+    border: 0px;
+}
+
+#orderMain{
+    padding: 30px 0px 30px 0px;
+    background-color: #f2f2f2;
+}
+
+#activateMain{
+    padding: 30px 0px 30px 0px;
+    background-color: #f2f2f2;
+}
+
+#register{
+    background-color: #fff;
+    padding: 20px 30px 20px 30px;
+    margin-top: 20px;
+}
+
+#activateKit{
+
+    margin: 30px 0px 30px 0px;
+    padding: 0px 0px 20px 0px;
+
+}
+
+#stepsActivateKit{
+    font-size: 16px;
+    padding: 15px 20px 15px 30px;
+}
+
+#activateKitHeader{
+    letter-spacing: 5px;
 }
 
 
+#orderContent{
+    padding: 20px;
+    background-color: white;
+}
+#whiteFooter a{
+    color: #000;
+    margin: 5px;
+}
+#summaryContent{
+    padding: 20px;
+    background-color: #ffa941;
+
+}
+
+#details{
+    margin-top: 10px;
+}
+
+#detailsContent{
+    padding: 20px;
+    background-color: #d6d5d5;
+
+}
+
+.orderProduct{
+    margin-top: 20px;
+    padding: 0rem !important;
+}
+
+.orderProduct span{
+    height: 32px;
+}
+
+.orderProduct .btn-floating {
+    width: 32px;
+    height: 32px;
+    line-height: 32px; 
+}
+
+.orderProduct  .btn-floating i {
+    line-height: 32px;
+}
+
+#activate{
+    margin: 20px;
+}
+
+#activateKitImg{
+    width: 128px;
+    height: auto;
+}
+#contentWelcome{
+    margin-top: 40px;
+}
+
+#buyMyGenImg{
+    width: 128px;
+    height: auto;
+}
+
+#activateKitBtn{
+    margin-top: 50px;
+    display: inline-block;
+}
+
+#buyMyGenBtn{
+    margin-top: 50px;
+    display: inline-block;
+}
 @media(max-width: 1280px){
     nav {
         padding: 0px 2% 0px 2%;
@@ -331,11 +664,23 @@ nav .brand-logo div{
         margin-left: 0px;  
         transition: .3s;
     }
+
+    #linkFooter ul{
+        margin: 5px;
+        float: left;
+        width: 30%;
+    }
+
+    #linkFooter ul#form{
+        margin: 5px;
+        float: left;
+        width: 50%;
+    }
 }
 
 @media(max-width: 600px){
     nav .brand-logo div{
-        width: 170px;
+        width: 185px;
         padding: 0px 0px 0px 0px;
         transition: .3s;
     }
@@ -343,6 +688,18 @@ nav .brand-logo div{
     #linkFooter{
         font-size: 14px;
         padding: 50px 0px 50px 0px;
+    }
+
+    #linkFooter ul{
+        margin: 5px;
+        float: left;
+        width: 40%;
+    }
+
+    #linkFooter ul#form{
+        margin: 5px;
+        float: left;
+        width: 90%;
     }
     
 }

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Bruno Gómez">
+    <meta itemprop="publisher" content="">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import CSS-->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta name="theme-color" content="#e69221">
+    <title>MyGen - Welcome</title>
+</head>
+
+<body style="overflow-x: hidden;">
+    <!--============================== INICIO NAV ===========================-->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo bold">My<span>GEN</span>
+                    <div>Supplemented by TAAG Genetics</div>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <!--============================== FIN NAV ===========================-->
+
+
+    <!--============================== MAIN ===========================-->
+
+<main class="bone">
+    <div class="row">
+        <div class="container">
+            <div class="col s12 white" id="welcome">
+                <div class="container">
+                    <h5 class="bold-text center">WELCOME, RODRIGO</h5>
+                    <br>
+                    <h6 class="center">You don’t have any active tests or results to view.Here are some things you can do:</h6>
+                    <div id="contentWelcome">
+                        <div class="col s12 m6 center">
+                            <img src="img/activateKitImg.png" id="activateKitImg" alt="">
+                            <h6 class="accent-text bold-text">Activate a kit</h6>
+                            <p>
+                            Activating your kit only take a few <br>
+                            minutes. You will need the barcode found <br>
+                            on your MyGEN kit
+                            </p>
+                            <p>
+                                <a href="" class="shop black-text" id="activateKitBtn">ACTIVATE KIT</a>
+                            </p>
+                            <p class="min-text bold-text">
+                                <a href="" class="black-text">Something wrong?</a>
+                            </p>
+                        </div>
+                        <div class="col s12 m6 center">
+                            <img src="img/buyMyGenImg.PNG" alt="" id="buyMyGenImg">
+                            <h6 class="accent-text bold-text">Buy a MyGEN test</h6>
+                            <p>
+                                MyGEN tests focus on genes associated <br>
+                                with metabolism, exercise, nutrients, skin <br>
+                                health and wellness. 
+                            </p>
+                            <p>
+                                <a href="" class="shop black-text" id="buyMyGenBtn">BUY MyGEN</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <!--============================== MAIN ===========================-->
+
+<!--============================== FOOTER ===========================-->          
+<footer class="page-footer white black-text" id="whiteFooter">
+    <div class="footer">
+        <div class="row">
+            <div class="col l3 s12">
+                <a href="#!" class="brand-logo bold grey-text text-darken-3">My<span class="grey-text">GEN</span>
+                    <div class="grey-text text-darken-3">Supplemented by TAAG Genetics</div>
+                </a>
+            </div>
+            <div class="col l9 s12 black-text right-align" id="linkFooter">
+                <a href="">Privacy policy</a>
+                <a href="">Terms of use</a>
+                <a href="">Contact</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright white black-text">
+        <div class="container right-align">
+            Copyright 2018 © TAAG Genetics. All rights reserved
+        </div>
+    </div>
+</footer>
+    <!--============================== FOOTER ===========================-->     
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/addCart.js"></script>
+    <script src="js/order.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('.sidenav').sidenav();
+            $('.tooltipped').tooltip();
+            $('.collapsible').collapsible();
+            new WOW().init();
+        });
+    </script>
+</body>
+
+</html>
