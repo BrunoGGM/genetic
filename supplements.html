@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Bruno Gómez">
+    <meta itemprop="publisher" content="">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+    <!--Import CSS-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta name="theme-color" content="#e69221">
+    <title>MyGen</title>
+</head>
+
+<body>
+    <!--============================== INICIO NAV ===========================-->
+    <div class="navbar-fixed">
+        <nav class="nav-dash">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo bold grey-text text-lighten-1">My<span class="white-text">GEN</span>
+                    <div class="white-text">Supplemented by TAAG Genetics</div>
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger white-text">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="dashCenter center-align hide-on-med-and-down min-text">
+                    <li>
+                        <a href="dashHome.html" class="white-text">
+                            <img src="img/icons/homeg.png" class="imgNavDash" alt="">
+                            <p class="textNavDash grey-text text-lighten-1"> HOME</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="results.html" class="white-text">
+                            <img src="img/icons/dna-structureg.png" class="imgNavDash" alt="">
+                            <p class="textNavDash grey-text text-lighten-1">RESULTS</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="supplements.html" class="white-text">
+                            <img src="img/icons/dietary-suplement.png" class="imgNavDash" alt="">
+                            <p class="textNavDash accent-text">SUPPLEMENTS</p>
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html" class="white-text">
+                            <img src="img/icons/blogg.png" class="imgNavDash" alt="">
+                            <p class="textNavDash grey-text text-lighten-1">BLOG</p>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="white-text">
+                            <img src="img/icons/otherg.png" class="imgNavDash" alt="">
+                            <p class="textNavDash grey-text text-lighten-1">OTHER</p>
+
+                        </a>
+                    </li>
+                </ul>
+                <ul class="right hide-on-med-and-down userMenu">
+                    <li>
+                        <a class="dropdown-trigger white-text" href="#!" data-target="userDrop">Rodrigo
+                            <i class="material-icons min-text right">arrow_drop_down</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- drop-down -->
+    <ul id="userDrop" class="dropdown-content">
+            <li>
+                <a href="#profileModal" class="modal-trigger">Perfil</a>
+            </li>
+            <li>
+                <a href="#shippingModal" class="modal-trigger">Datos de envio</a>
+            </li>
+            <li>
+                <a href="#historyModal" class="modal-trigger">Historial</a>
+            </li>     
+            <li>
+                <a href="index.html">Cerrar Sesión</a>
+            </li>                   
+        </ul>
+        <!-- drop-down -->
+<!--============================== PERFIL ===========================--> 
+<div id="profileModal" class="modal">
+        <div class="modal-content center-align">
+            <h5 class="bold-text accent-text-b">PERFIL</h5>
+            <form action="" class="row">
+                <div class="container">
+                    <div class="input-field col s12">
+                        <input id="name" type="text" class="validate" >
+                        <label for="name">Nombre (s)</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="apellidoP" type="text" class="validate" >
+                        <label for="apellidoP">Apellido Paterno</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="apelliodM" type="text" class="validate" >
+                        <label for="apellidoM">Apellido Materno</label>
+                    </div>
+                    <div id="changePsw" class="animated fadeIn hide">
+                        <div class="input-field col s6">
+                            <input id="pwsOld" type="text" class="validate" required>
+                            <label for="pwsOld">Contraseña antigua</label>
+                        </div>
+                        <div class="input-field col s7">
+                            <input id="pwsNew" type="text" class="validate" required>
+                            <label for="pwsNew">Nueva contraseña</label>
+                        </div>
+                        <div class="input-field col s7">
+                            <input id="pws" type="text" class="validate" required>
+                            <label for="pws">Confirmar contraseña</label>
+                        </div>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="genero" type="text" class="validate" >
+                        <label for="genero">Género</label>
+                    </div> 
+                    <div class="input-field col s6">
+                        <input id="nacimiento" type="date" placeholder="Fecha de Nacimiento" class="validate" >
+                        <label for="nacimiento">Fecha de Nacimiento</label>
+                    </div>                                                                                                 
+                    <div class="col s12">
+                        <button class="waves-effect btn orange white-text">
+                            GUARDAR
+                        </button>
+                    </div>
+                    <div class="col s12 marginTop30">
+                        <a href="#!" id="changePswBtn" class="orange-text">Cambiar contraseña</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-red btn-flat">CANCELAR</a>
+        </div>
+    </div>
+<!--============================== PERFIL ===========================-->   
+
+<!--============================== SHIPPING ===========================--> 
+<div id="shippingModal" class="modal">
+        <div class="modal-content center-align">
+            <h5 class="bold-text accent-text-b">DATOS DE ENVÍO</h5>
+            <form action="" class="row">
+                <div class="container">
+                    <div class="input-field col s12">
+                        <input id="name" type="text" class="validate" >
+                        <label for="name">Nombre (s)</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="apellidoP" type="text" class="validate" >
+                        <label for="apellidoP">Apellido Paterno</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="apelliodM" type="text" class="validate" >
+                        <label for="apellidoM">Apellido Materno</label>
+                    </div>
+                    <div class="col s12 left-align">
+                        <p>Datos de envio</p>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="nombreCalle" type="text" class="validate" >
+                        <label for="nombreCalle">Nombre calle</label>
+                    </div> 
+                    <div class="input-field col s6">
+                        <input id="numeroCalle" type="text"  class="validate" >
+                        <label for="numeroCalle">Numero calle</label>
+                    </div>  
+                    <div class="input-field col s6">
+                        <input id="interior" type="text" class="validate" >
+                        <label for="interior">Interior</label>
+                    </div>            
+                    <div class="input-field col s6">
+                        <input id="ciudad" type="text"  class="validate" >
+                        <label for="ciudad">Ciudad</label>
+                    </div>  
+                    <div class="input-field col s6">
+                        <input id="comuna" type="text" class="validate" >
+                        <label for="comuna">Comuna</label>
+                    </div>  
+                    <div class="input-field col s6">
+                        <input id="zip" type="text" class="validate" required>
+                        <label for="zip">ZIP Code
+                            <a id="zipTool" class="tooltipped grey-text" data-position="right" data-tooltip="lorem">
+                                <i class="material-icons" style="font-size: 20px">help_outline</i>
+                            </a>
+                        </label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="phone" type="number" class="validate" required>
+                        <label for="phone">Phone number</label>
+                    </div>                      
+                    <div class="col s12">
+                        <button class="waves-effect btn orange white-text">
+                            GUARDAR
+                        </button>
+                    </div>
+                    <div class="col s12 marginTop30">
+                        <a href="#!" id="changePswBtn" class="orange-text">Cambiar contraseña</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-red btn-flat">CANCELAR</a>
+        </div>
+    </div>
+<!--============================== SHIPPING  ===========================--> 
+<!--============================== history ===========================--> 
+<div id="historyModal" class="modal">
+        <div class="modal-content center-align row">
+            <h5 class="bold-text accent-text-b" id="headerHistory">HISTORIAL DE PAGOS</h5>
+
+                    <table class="marginTop30 highlight" id="historyTable">
+                        <thead>
+                            <tr>
+                                <th>Codigo</th>
+                                <th>Producto</th>
+                                <th>Fecha</th>
+                                <th>Importe</th>
+                                <th>Estado</th>
+                                <th>Recibo</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>221994 </td>
+                                <td>My Gen Ki</td>
+                                <td>22/08/18</td>
+                                <td>$1,200.00</td>
+                                <td>PAGADO</td>
+                                <td>
+                                    <a href="#!" class="orange-text showTicket">Ver Recibo</a>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>221994 </td>
+                                <td>My Gen Ki</td>
+                                <td>22/08/18</td>
+                                <td>$1,200.00</td>
+                                <td>PAGADO</td>
+                                <td>
+                                    <a href="#!"  class="orange-text showTicket">Ver Recibo</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>221994 </td>
+                                <td>My Gen Ki</td>
+                                <td>22/08/18</td>
+                                <td>$1,200.00</td>
+                                <td>PAGADO</td>
+                                <td>
+                                    <a href="#!" class="orange-text showTicket">Ver Recibo</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                  </table> 
+                  
+                  <div id="ticket" class="hide">
+                        <div class="input-field col s4">
+                            <input id="code" type="text" class="validate" disabled>
+                            <label for="code">Código de Compra</label>
+                        </div>  
+                        <div class="input-field col s4">
+                            <input id="codeCard" type="text" class="validate" disabled>
+                            <label for="codeCard">Número de Tarjeta</label>
+                        </div>      
+                        <div class="input-field col s4">
+                            <input id="cc" type="text" class="validate" disabled>
+                            <label for="cc">Código de Seguridad</label>
+                        </div> 
+                        <div class="input-field col s4">
+                            <input id="pago" type="text" class="validate" disabled>
+                            <label for="pago">Pago Total</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="date" type="text" class="validate" disabled>
+                            <label for="date">Fecha y Hora de transacción</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="t" type="text" class="validate" disabled>
+                            <label for="t">Código tipo de pago</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="des" type="text" class="validate" disabled>
+                            <label for="des">Descripción tipo de pago </label>
+                        </div> 
+                            <table class="marginTop30">
+                                <thead>
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Producto</th>
+                                        <th>Descripción</th>
+                                        <th>Costo</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>221994</td>
+                                        <td>Resistencia</td>
+                                        <td>
+                                            Sabras si tu cuerpo está  mejor adaptado para deporte de fuerza, 
+                                            resistencia y velocidad. Y según el resultado, establecer rutina de 
+                                            ejercicio para llegar a los resultados deseados a menor tiempo. 
+
+                                        </td>
+                                        <td>$999.00</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                  </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-red btn-flat">CERRAR</a>
+        </div>
+    </div>
+<!--============================== history  ===========================-->  
+    <!-- mobile-demo -->
+    <ul class="sidenav" id="mobile-demo">
+            <li>
+                <a href="">HOME</a>
+            </li>
+            <li>
+                <a href="">RESULTS</a>
+            </li>
+            <li>
+                <a href="">SUPPLEMENTS</a>
+            </li>
+            <li>
+                <a href="">BLOG</a>
+            </li>
+            <li>
+                <a href="">OTHER</a>
+            </li>
+        </ul>
+    <!-- mobile-demo -->
+
+<!--============================== FIN NAV ===========================-->
+
+
+
+<!--============================== MAIN ===========================-->
+
+<main class="row" id="dashResult">
+    <div class="animated fadeIn  container center" id="dashResultContent">
+
+        <h4 class="bold-text">RODRIGO, HERE ARE YOUR PERSONALIZED SUPPLEMENTS</h4>
+        <h6 class="margin50 white hidden">SUPPLEMENTS</h6>
+
+        <div class="col s12 left-align">
+            <h6 class="accent-text bold-text">SPORT AND ACTIVE LIFE</h6>
+            <br>
+            <h6 class="black-text bold-text">POWER</h6>
+            <hr class="col s12">
+        </div>
+
+        <div class="col s12 result">
+            <div class="col s12 m3">
+                <img class="resultImg" src="img/icons/dietary-suplementg.png" alt="">
+            </div>
+            <div class="col s12 m9 resultText">
+                <div class="col s12">
+                    <span class="left">C4-LX365</span>
+                    <a href="#!" class="black-text">
+                        <span class="right showResult" id="1">LEARN MORE</span>
+                    </a>
+                </div>
+                <br>
+                <p class="left-align">
+                        Las formulación <span class="bold-text">C4-LX365</span>
+                        fue específicamente fue diseñada para tu genotipo y está enfocada en mejorar 
+                        tu rendimiento en ejercicios de fuerza y potencia, asegurando la disponibilidad energética y la regeneración 
+                        de estructuras dañadas.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col s12 animated slideInRight hide" id="supplement1">
+        <div class="container">
+            <div class="col s12">
+                <div class="col s12">
+                    <div class="col s12 m12 l2">
+                        <img class="resultImgShow" src="img/icons/dietary-suplementg.png" alt="">
+                    </div>
+                    <div class="col s12 m12 l4">
+                        <h5 class="accent-text bold-text">SPORT AND ACTIVE LIFE</h5>
+                        <h5 class="black-text bold-text">POWER</h5>
+                    </div>
+                    <div class="col s12 m12 l6">
+                        <span class="black-text bold-text">TU OBJETIVO</span>
+                        <br>
+                        <span class="min-text2">
+                            Aumentar tu fuerza muscular para ejecutar ejercicios de potencia
+                        </span>
+
+                        <div class="dahsed"></div>
+
+                        <span class="black-text bold-text">TU GENOTIPO</span>
+                        <br>
+                        <span class="min-text2">
+                            <span class="bold-text">CTN3 rs1815739.</span>Tu genotipo ha sido asociado con menor capacidad para actividades de fuerza o potencia
+                        </span>
+                    </div>
+                </div>
+                <div class="col s12 m12 l2 " id="move">
+                    <img src="img/icons/left-arrow.png" class="nextResult left prevR" alt="Prev" title="Prev" current="2" prev="1">
+                    <img src="img/icons/right-arrow.png" class="nextResult right nextR" alt="Next" title="Next" current="2" next="1">
+                </div>
+            </div>
+
+            <div class="col s12 infoResult">
+
+                <h5 class="center-align bold-text accent-text">
+                    INTENSE POWER FORMULATION - R101 
+                </h5>
+                <br>
+                <p>
+                        Según tu genotipo, necesitas ayuda para realizar ejercicios de fuerza y potencia. Las formulación 
+                        <span class="bold-text">INTENSE POWER FORMULATION - R101</span>, específicamente fue diseñada para tu genotipo está enfocada en mejorar tu rendimiento en ejercicios de 
+                        fuerza y potencia, asegurando la disponibilidad energética y la regeneración de estructuras dañadas
+                </p>
+
+            </div>
+
+            <div class="col s12 science">
+                <h6 class="bold-text">CIENCIA</h6>
+                <hr class="col s12">
+                <div class="col s12">
+                    <p>
+                            En el paquete <span class="bold-text">INTENSE POWER FORMULATION - R101</span> encontrarás dos formulaciones especialmente diseñadas para ti.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique temporibus, enim voluptates fuga nesciunt, veniam perferendis quaerat voluptatibus recusandae eos neque. Error voluptatum necessitatibus illum similique quaerat adipisci, modi officia.                        
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum consequuntur culpa eveniet accusantium dolor quasi amet autem natus voluptatibus laborum! Maxime tenetur nulla omnis quasi voluptates est assumenda distinctio dolores?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum vitae itaque tempora praesentium vero ipsam cum similique et molestiae labore eius unde architecto autem, deleniti quis veritatis quo quae fugiat?
+                    </p>
+                </div>
+            </div>
+
+                <div class="col s12 science">
+                    <h6 class="bold-text">TU FORMULACION</h6>
+                    <hr class="col s12">
+                    <div class="col s12 formulacionTable left-align">
+                        <div class="col s12">
+                            <h5 class="bold-text">C4-LX365</h5>
+                            <h6>La fuerza explosiva</h6>
+                        </div>
+                        <div class="col s12">
+
+                            <div class="col s12 m3 center-align">
+                                    TIPO DE PRODUCTO
+                            </div>
+                            <div class="col s12 m3 center-align">
+                                    PRESENTACIÓN
+                            </div>
+                            <div class="col s12 m4 center-align">
+                                    MODO DE USO
+                            </div>
+                            <div class="col s12 m2 center-align">
+                                    PRECAUCIONES
+                            </div>
+
+                            <div class="col s12 m3 formulacionOut">
+                                <div class="col s12 formulacionIn">
+                                    <img src="img/icons/medicine.svg" height="50px" alt=""><br>
+                                    <span>Polvo</span>
+                                </div>
+                            </div>
+                            <div class="col s12 m3 formulacionOut">
+                                <div class="col s12 formulacionIn">
+                                        400 g
+                                </div>
+                            </div>
+                            <div class="col s12 m4 formulacionOut">
+                                <div class="col s12 formulacionIn">
+                                        Tomar   una   porción(1 cucharadita de té) una vez al día con jugo o bebida 
+                                        azucarada
+                                </div>
+                            </div>
+                            <div class="col s12 m2 formulacionOut">
+                                <div class="col s12 formulacionIn">
+                                        No tomar más de veces 
+                                        al día
+                                </div>
+                            </div>                            
+                        </div>
+
+                        <div class="col s12 marginTop30">
+                            <h6>
+                                <span class="left">PRINCIPALES INGREDIENTES </span> <span class="right"><a href="" class="orange-text">ver información nutricional
+                                    <i class="material-icons right orange-text">keyboard_arrow_right</i>
+                                </a></span>
+                            </h6>
+                        </div>
+
+                        <div class="col s12  borderFormulacion">
+                            <div class="col s13 m3  bold-text ">
+                                    Ingrediente
+                            </div>
+                            <div class="col 12 m6  bold-text ">
+                                    Aporte
+                            </div>
+                            <div class="col s13 m3  bold-text ">
+                                    Referencias
+                            </div>
+                            <div class="col s12 dahsed"></div>
+                            <div class="col s13 m3">
+                                    Creatina
+                            </div>
+                            <div class="col 12 m6">
+                                    Promueve el aumento de la fuerza muscular.
+                                    Ayuda a aumentar la resistencia muscular.
+                                    Mejora el rendimiento deportivo.
+                            </div>
+                            <div class="col s13 m3">
+                                    XXXX
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+    
+    <div class="container">
+
+            <div class="col s12 left-align">
+                    <h6 class="bold-text">NOTAS</h6>
+                    <P>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos recusandae porro consequuntur 
+                        maiores necessitatibus asperiores, qui iure eius culpa hic temporibus est autem dicta reiciendis ipsam consequatur ab, nulla quidem!
+                    </P>
+            </div>
+
+            <div class="col s12 left-align marginTop30">
+                <h6 class="bold-text">REFERENCIAS</h6>
+
+                <ol class="min-text">
+                    <li>
+                        C. Pickering y J. Kiely. 2017. ACTN3: More than Just a Gene for Speed. Front. Physiol. 8:1080.
+                    </li>
+                    <li>
+                        Ma F, Yang Y, Li X, Zhou F, Gao C, et al. 2013. The Association of Sport Performance with ACE and ACTN3 Genetic Polymorphisms:
+                        A Systematic Review and Meta-Analysis. PLoS ONE 8(1)
+                    </li>
+                    <li>
+                        Del Coso, J. et al. 2016. ACTN3 X
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+
+</main>
+
+    <!--============================== MAIN ===========================-->
+
+    <!--============================== FOOTER ===========================-->
+    <footer class="page-footer">
+        <div class="footer">
+            <div class="row">
+                <div class="col l3 s12">
+                    <a href="#!" class="brand-logo bold">My<span>GEN</span>
+                        <div>Supplemented by TAAG Genetics</div>
+                    </a>
+                </div>
+                <div class="col l9 s12" id="linkFooter">
+                    <div class="black-text">
+                        <ul>
+                            <li>
+                                <a class="black-text bold-text" href="#!">PRODUCTS</a>
+                            </li>
+                            <br>
+                            <li>
+                                <a class="black-text" href="#!">Genetic tests</a>
+                            </li>
+                            <li>
+                                <a class="black-text" href="#!">Supplements</a>
+                            </li>
+                            <li>
+                                <a class="black-text" href="#!">How it works</a>
+                            </li>
+                            <li>
+                                <a class="black-text" href="#!">Success stories</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <ul>
+                            <li>
+                                <a class="black-text bold-text" href="#!">COMPANY</a>
+                            </li>
+                            <br>
+                            <li>
+                                <a class="black-text" href="#!">About</a>
+                            </li>
+                            <li>
+                                <a class="black-text" href="#!">Blog</a>
+                            </li>
+                            <li>
+                                <a class="black-text" href="#!">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <ul>
+                            <li>
+                                <a class="black-text bold-text" href="#!">RESOURCES</a>
+                            </li>
+                            <br>
+                            <li>
+                                <a class="black-text" href="#!">Help</a>
+                            </li>
+                            <li>
+                                <a class="black-text" href="#!">Privacy policy</a>
+                            </li>
+                            <li>
+                                <a class="black-text" href="#!">Terms of use</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <ul>
+                            <li>
+                                <a class="black-text bold-text" href="#!">PARTNERS</a>
+                            </li>
+                            <br>
+                            <li>
+                                <a class="black-text" href="#!">Become a coach</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <ul>
+                            <li>
+                                <a class="grey-text text-lighten-3 bold-text" href="#!">RELATED PRODUCTS</a>
+                            </li>
+                            <br>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="#!">Ancestry</a>
+                            </li>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="#!">Pharmacogenetics</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="white-text">
+                        <ul id="form">
+                            <p>CURIOUS TO LEARN MORE?</p>
+                            <p class="black-text">Join our newsletter to receive updates on actionable genetics</p>
+                            <form action="" id="formFooter" name="formFooter">
+                                <div class="input-field col s7">
+                                    <input placeholder="YourEmail" id="" type="text" class="validate">
+                                </div>
+                                <a href="" class="shop white-text col s3 push-s1">Sign Up</a>
+
+                            </form>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <br>
+                <hr class="white-text">
+                <br>
+                <span class="black-text">Copyright 2018 © TAAG Genetics. All rights reserved.</span>
+                <div class="right">
+                    <div class="social-footer">
+                        <a href="">
+                            <img src="img/icons/twitter-logo-button.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="img/icons/facebook-logo-button.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="img/icons/instagram-logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--============================== FOOTER ===========================-->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/addCart.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <script src="js/dashHome.js"></script>
+    <script src="js/supplement.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#profileModal').modal();
+            $('#shippingModal').modal();
+            $('#historyModal').modal();
+            $(".dropdown-trigger").dropdown();
+            $('.sidenav').sidenav();
+            $('.slider').slider({
+                indicators: false,
+                height: 450,
+                duration: 400,
+                interval: 500000
+            });
+            new WOW().init();
+            $('.tooltipped').tooltip();
+ 
+
+        });
+    </script>
+
+
+</body>
+
+</html>

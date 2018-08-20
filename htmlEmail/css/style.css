@@ -1,0 +1,38 @@
+@font-face {
+    font-family: HelveticaNeue;
+    src: url('../font/HELVET.TTF'),
+}
+
+body {
+    font-family: 'HelveticaNeue', sans-serif;
+    color: #413f3a;
+}
+
+.bodyMail{
+    padding: 30px;
+    height: 550px;
+    width: 600px;  
+    background-color: #ebebeb;
+    align-content: center;
+    text-align: center;
+  }
+  .content{
+    text-align: left;
+    color: white;
+    padding: 20px;
+    width: 92%;
+    height: 180px;
+    background-color: orange;
+    position: relative;
+    top: 50px;
+  }
+  .center{
+      text-align: center !important;
+  }
+  .imgMail img{
+    height: 150px;
+  
+  }
+  .orange-text{
+    color: orange;
+  }

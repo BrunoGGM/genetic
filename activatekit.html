@@ -12,6 +12,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import CSS-->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
@@ -43,7 +44,9 @@
 <main class="bone">
     <div class="row">
         <div class="container">
-            <div class="col s12 white" id="activateKit">
+
+
+            <div class="col s12 white wow fadeIn" id="activateKit">
                <div class="orange">
                     <div class="white-text" id="stepsActivateKit"> <span class="bold-text">ACTIVATE > </span><span>ASSESSMENT > </span><span>DONE!</span></div>
                </div>
@@ -62,6 +65,126 @@
                     </div>
                </div>
             </div>
+
+
+            <div class="col s12 white wow bounceInUp hide" id="assessment">
+                <div class="orange">
+                    <div class="white-text" id="stepsActivateKit"> <span>ACTIVATE > </span><span class="bold-text">ASSESSMENT > </span><span>DONE!</span></div>
+               </div>
+               <div class="col s12 center"  id="activate">
+                    <div class="col s12">
+                        <h5>LET’S TALK ABOUT YOU</h5>
+                        <p>Please complete the following assessment for allowing us to give you a truly personalized experience</p>
+                    </div>  
+                    <form action="">
+
+
+                    <div class="col s12 question animated flipInX" id="question1">
+                        <h5 class="bold-text">WHAT ARE YOUR MAIN INTERESTS?</h5>
+                        <h6>We ask about 3 to 5 questions per interest area</h6>
+                        <div class="col s12 answers">
+                            <div class="container">
+
+                                <div class="col s12 m4 answer center">
+                                    <div class="answerContent">
+                                        <img src="img/icons/lotus.svg" class="responsive-img" alt="">
+                                        <p>Lorem ipsum dolor sit am</p>
+                                    </div>
+                                </div>
+
+                                <div class="col s12 m4 answer">
+                                    <div class="answerContent">
+                                        <img src="img/icons/lotus.svg" class="responsive-img" alt="">
+                                        <p>Lorem ipsum dolor sit am</p>
+                                    </div>
+                                </div>
+
+                                <div class="col s12 m4 answer">
+                                    <div class="answerContent">
+                                        <img src="img/icons/lotus.svg" class="responsive-img" alt="">
+                                        <p>Lorem ipsum dolor sit am</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col s12 question animated flipInX hide" id="question2">
+                        <h5 class="bold-text">ABOUT “SPORT AND ACTIVE LIFE”, WHICH IS YOUR TOP PRIORITY?</h5>
+                        <h6>Tough question, we know.Go with your gut</h6>
+                        <div class="col s12 answers">
+                            <div class="container">
+
+                                <div class="col s12 m3 answer">
+                                    <div class="answerContent">
+                                        <img src="img/icons/bullseye.svg" class="responsive-img" alt="">
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                </div>
+                                <div class="col s12 m3 answer">
+                                    <div class="answerContent">
+                                        <img src="img/icons/dna-structure.svg" class="responsive-img" alt="">
+                                        <p>Lorem ipsum </p>
+                                    </div>
+                                </div>
+                                <div class="col s12 m3 answer">
+                                    <div class="answerContent">
+                                        <img src="img/icons/increase.png" class="responsive-img" alt="">
+                                        <p>Lorem ipsum </p>
+                                    </div>
+                                </div>
+                                <div class="col s12 m3 answer">
+                                    <div class="answerContent">
+                                        <img src="img/icons/improve.png" class="responsive-img" alt="">
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                        <div class="col s12 question wow flipInX hide" id="question3">
+                            question 3...
+                        </div>
+
+                        <div class="col s12 question wow flipInX hide" id="question4">
+                            question 4...
+
+                        </div>
+                    </form>
+
+                    <a href="#!" class="left black-text min-text2" id="backquestion"><i class="material-icons accent-text min-text3">keyboard_arrow_left</i> Back</a>
+                    <a href="" class="center black-text"><span id="currentQuestion">1</span> / <span id="numQuestion"></span></a>
+                    <a href="#!" class="right  black-text min-text2" id="nextquestion">Continue <i class="material-icons accent-text min-text3">keyboard_arrow_right</i></a>
+               </div>
+            </div>
+
+
+            <div class="col s12 white wow shake hide center" id="done">
+                    <div class="orange">
+                        <div class="white-text" id="stepsActivateKit"> <span>ACTIVATE > </span><span >ASSESSMENT > </span><span class="bold-text">DONE!</span></div>
+                    </div>
+                    <div class="col s12 center-align"  id="activate"> 
+                        <h5 class="bold-text">CONGRATULATIONS, NOW YOU ARE READY <br> TO TAKE YOUR SAMPLE!</h5>
+                        <br>
+                        <h6>Please follow these instructions:</h6>
+                    </div>
+                    <ul>
+                        <li>1.- ...</li>
+                        <li>2.- ...</li>
+                        <li>3.- ...</li>
+
+                    </ul>
+                    <div class="activate">
+                        <a href="" class="shop black-text">Ok</a>
+                    </div>
+            </div>
+
+
+
         </div>
 
  <!-- Modal Structure -->
@@ -102,7 +225,7 @@
                 </div>                                   
             </div>
             <div class="col s12 m4 l3 center-align">
-                <a href="#" class="shop modal-close black-text">OK</a>
+                <a href="#" class="shop modal-close black-text" id="assessmentContinue">OK</a>
                 <a href="#!" class="col s12 waves-effect btn-flat black-text min-text" style="margin-bottom: 20px">Something wrong?</a>   
             </div>
 
@@ -144,8 +267,7 @@
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
-    <script src="js/addCart.js"></script>
-    <script src="js/order.js"></script>
+    <script src="js/assessment.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
         $(document).ready(function () {
