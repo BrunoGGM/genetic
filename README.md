@@ -1,2 +1,0 @@
-# genetic
-genetic front-end
