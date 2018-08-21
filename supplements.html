@@ -81,21 +81,37 @@
     </div>
     <!-- drop-down -->
     <ul id="userDrop" class="dropdown-content">
-            <li>
-                <a href="#profileModal" class="modal-trigger">Perfil</a>
-            </li>
-            <li>
-                <a href="#shippingModal" class="modal-trigger">Datos de envio</a>
-            </li>
-            <li>
-                <a href="#historyModal" class="modal-trigger">Historial</a>
-            </li>     
-            <li>
-                <a href="index.html">Cerrar Sesión</a>
-            </li>                   
-        </ul>
-        <!-- drop-down -->
-<!--============================== PERFIL ===========================--> 
+        <li>
+            <a href="#profileModal" class="modal-trigger">Perfil</a>
+        </li>
+        <li>
+            <a href="#shippingModal" class="modal-trigger">Envio</a>
+        </li>
+        <li>
+            <a href="#historyModal" class="modal-trigger">Historial</a>
+        </li>     
+        <li>
+            <a href="index.html">Salir</a>
+        </li>                   
+    </ul>
+    <!-- drop-down -->
+    <!-- drop-down -->
+    <ul id="userDropM" class="dropdown-content">
+        <li>
+            <a href="#profileModal" class="modal-trigger">Perfil</a>
+        </li>
+        <li>
+            <a href="#shippingModal" class="modal-trigger">Envio</a>
+        </li>
+        <li>
+            <a href="#historyModal" class="modal-trigger">Historial</a>
+        </li>     
+        <li>
+            <a href="index.html">Salir</a>
+        </li>                   
+    </ul>
+    <!-- drop-down -->    
+<!--========================================== PERFIL ===========================--> 
 <div id="profileModal" class="modal">
         <div class="modal-content center-align">
             <h5 class="bold-text accent-text-b">PERFIL</h5>
@@ -114,15 +130,15 @@
                         <label for="apellidoM">Apellido Materno</label>
                     </div>
                     <div id="changePsw" class="animated fadeIn hide">
-                        <div class="input-field col s6">
+                        <div class="input-field col s12">
                             <input id="pwsOld" type="text" class="validate" required>
                             <label for="pwsOld">Contraseña antigua</label>
                         </div>
-                        <div class="input-field col s7">
+                        <div class="input-field col s12">
                             <input id="pwsNew" type="text" class="validate" required>
                             <label for="pwsNew">Nueva contraseña</label>
                         </div>
-                        <div class="input-field col s7">
+                        <div class="input-field col s12">
                             <input id="pws" type="text" class="validate" required>
                             <label for="pws">Confirmar contraseña</label>
                         </div>
@@ -292,7 +308,7 @@
                         </div>
                         <div class="input-field col s4">
                             <input id="date" type="text" class="validate" disabled>
-                            <label for="date">Fecha y Hora de transacción</label>
+                            <label for="date">Fecha y hora</label>
                         </div>
                         <div class="input-field col s4">
                             <input id="t" type="text" class="validate" disabled>
@@ -336,22 +352,24 @@
 <!--============================== history  ===========================-->  
     <!-- mobile-demo -->
     <ul class="sidenav" id="mobile-demo">
-            <li>
-                <a href="">HOME</a>
-            </li>
-            <li>
-                <a href="">RESULTS</a>
-            </li>
-            <li>
-                <a href="">SUPPLEMENTS</a>
-            </li>
-            <li>
-                <a href="">BLOG</a>
-            </li>
-            <li>
-                <a href="">OTHER</a>
-            </li>
-        </ul>
+        <li>
+            <a href="dashHome.html">HOME</a>
+        </li>
+        <li>
+            <a href="results.html">RESULTS</a>
+        </li>
+        <li>
+            <a href="supplements.html">SUPPLEMENTS</a>
+        </li>
+        <li>
+            <a href="blog.html">BLOG</a>
+        </li>
+        <li>
+            <a class="dropdown-trigger white" href="#!" data-target="userDropM">Rodrigo
+                <i class="material-icons min-text right">arrow_drop_down</i>
+            </a>
+        </li>
+    </ul>
     <!-- mobile-demo -->
 
 <!--============================== FIN NAV ===========================-->

@@ -159,8 +159,8 @@ main {
 }
 
 .successContainerImg{
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     position: relative;
     background-color: #c5c5c5;
@@ -168,8 +168,8 @@ main {
 }
 
 .successImg{
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     position: relative;
     left: 10px;
@@ -452,6 +452,7 @@ nav .brand-logo div {
 }
 
 .slider .slides li .caption {
+    width: 80%;
     left: 10%;
     font-weight: bold;
 }
@@ -847,7 +848,7 @@ h5 {
 }
 
 .textSuccess{
-    justify-content: center;
+justify-content: center;
 align-content: center;
 height: 380px;
 flex-direction: column;
@@ -1157,6 +1158,12 @@ infoCat {
         padding: 0px 0px 0px 0px;
         transition: .3s;
     }
+    .slider .slides li img {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: right;
+    }
     #linkFooter {
         font-size: 14px;
         padding: 50px 0px 50px 0px;
@@ -1177,5 +1184,13 @@ infoCat {
         position: relative;
         left: 32px !important;
 
+    }
+    .textSuccess{
+        justify-content: center;
+        align-content: center;
+        height: 200px;
+        flex-direction: column;
+        font-size: 16px;
+        display: flex;
     }
 }
