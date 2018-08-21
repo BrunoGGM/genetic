@@ -1144,6 +1144,13 @@ infoCat {
     opacity: 0;
 }
 
+.slideM{
+    visibility: hidden;
+}
+.notCompatible{
+    
+    display: none;
+}
 @media(max-width: 1280px) {
     nav {
         padding: 0px 2% 0px 2%;
@@ -1173,6 +1180,123 @@ infoCat {
 
     }
 }
+@media(max-width: 992px) {
+
+    .slider .slides li img {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    
+    }
+    .slider {
+
+        position: relative;
+        height: 300px !important;
+        width: 100%;
+    
+    }
+    .slider .slides {
+
+        background-color: #9e9e9e;
+        margin: 0;
+        height: 300px !important;
+    
+    }
+    .slide{
+        display: none;
+    }
+    .slideM{
+        height: 300px !important;
+        visibility: initial;
+    }
+    .blog .slider .slides li img {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    
+    }
+    .blog .slider {
+
+        position: relative;
+        height: 450px !important;
+        width: 100%;
+    
+    }
+    .blog .slider .slides {
+
+        background-color: #9e9e9e;
+        margin: 0;
+        height: 400px !important;
+    
+    }
+    .blog .slider .slides li img {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    
+    }
+    @media all and (orientation:landscape){
+        .rotate{
+            display: none;
+        }
+
+        .slider .slides li img {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        
+        }
+        .slider {
+    
+            position: relative;
+            height: 400px !important;
+            width: 100%;
+        
+        }
+        .slider .slides {
+    
+            background-color: #9e9e9e;
+            margin: 0;
+            height: 400px !important;
+        
+        }
+        .slide{
+            display: none;
+        }
+        .slideM{
+            height: 400px !important;
+            visibility: initial;
+        }
+        .blog .slider .slides li img {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        
+        }
+        .blog .slider {
+    
+            position: relative;
+            height: 450px !important;
+            width: 100%;
+        
+        }
+        .blog .slider .slides {
+    
+            background-color: #9e9e9e;
+            margin: 0;
+            height: 400px !important;
+        
+        }
+        .blog .slider .slides li img {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        
+        }
+    }
+
+
+}
 
 @media(max-width: 600px) {
     nav .brand-logo div {
@@ -1180,13 +1304,7 @@ infoCat {
         padding: 0px 0px 0px 0px;
         transition: .3s;
     }
-    .slider .slides li img {
-        height: 100%;
-        width: 100%;
-        background-size: cover;
-        background-position: right;
-    }
-    #linkFooter {
+   #linkFooter {
         font-size: 14px;
         padding: 50px 0px 50px 0px;
     }
@@ -1214,6 +1332,239 @@ infoCat {
         flex-direction: column;
         font-size: 16px;
         display: flex;
+    }
+    
+    .slider .slides li img {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    
+    }
+    .slider {
+
+        position: relative;
+        height: 210px !important;
+        width: 100%;
+    
+    }
+    .slider .slides {
+
+        background-color: #9e9e9e;
+        margin: 0;
+        height: 210px !important;
+    
+    }
+    .slide{
+        display: none;
+    }
+    .slideM{
+        height: 210px !important;
+        visibility: initial;
+    }
+    .blog .slider .slides li img {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    
+    }
+    .blog .slider {
+
+        position: relative;
+        height: 450px !important;
+        width: 100%;
+    
+    }
+    .blog .slider .slides {
+
+        background-color: #9e9e9e;
+        margin: 0;
+        height: 400px !important;
+    
+    }
+    .blog .slider .slides li img {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    
+    }
+    #sportTable{
+        height: 360px;
+        width: 100%;
+        background-image: url('../img/rotate.gif');
+        background-color: gray;
+    }
+    #sportTable div{
+        display: none;
+    }
+    #weightTable div{
+        display: none;
+    }
+
+    #weightTable{
+        height: 360px;
+        width: 100%;
+        background-image: url('../img/rotate.gif');
+        background-color: gray;
+    }
+    #beautyTable div{
+        display: none;
+    }
+
+    #beautyTable{
+        height: 360px;
+        width: 100%;
+        background-image: url('../img/rotate.gif');
+        background-color: gray;
+    }
+
+    #wellnessTable div{
+        display: none;
+    }
+
+    #wellnessTable{
+        height: 360px;
+        width: 100%;
+        background-image: url('../img/rotate.gif');
+        background-color: gray;
+    }
+    @media all and (orientation:landscape){
+        @media(min-width: 601px){
+            .rotate{
+                display: none;
+            }
+            #sportTable {
+                background-image: url(../img/sport.jpg);
+                width: 100%;
+                padding: 0px;
+                background-size: cover;
+            }
+            
+            #sportTable>div {
+                display: initial;
+                padding: 20px;
+            }
+            #sportTable div{
+                display: initial;
+            }
+            #weightTable {
+                background-image: url(../img/sport.jpg);
+                width: 100%;
+                padding: 0px;
+                background-size: cover;
+            }
+            
+            #weightTable>div {
+                display: initial;
+                padding: 20px;
+            }
+            #weightTable div{
+                display: initial;
+            }
+            #beautyTable {
+                background-image: url(../img/sport.jpg);
+                width: 100%;
+                padding: 0px;
+                background-size: cover;
+            }
+            
+            #beautyTable>div {
+                display: initial;
+                padding: 20px;
+            }
+            #beautyTable div{
+                display: initial;
+            }
+            #wellnessTable {
+                background-image: url(../img/sport.jpg);
+                width: 100%;
+                padding: 0px;
+                background-size: cover;
+            }
+            
+            #wellnessTable>div {
+                display: initial;
+                padding: 20px;
+            }
+            #wellnessTable div{
+                display: initial;
+            }            
+        }
+        #sportTable{
+            height: auto;
+            width: 100%;
+            background-image: url('../img/rotate.gif');
+            background-color: gray;
+        }
+        #weighTable{
+            height: auto;
+            width: 100%;
+            background-image: url('../img/rotate.gif');
+            background-color: gray;
+        }    
+        #beautyTable{
+            height: auto;
+            width: 100%;
+            background-image: url('../img/rotate.gif');
+            background-color: gray;
+        }    
+        #wellnessTable{
+            height: auto;
+            width: 100%;
+            background-image: url('../img/rotate.gif');
+            background-color: gray;
+        }     
+        .notCompatible{
+            padding: 10px !important;
+            height: 80px;
+            display: block;
+        }
+        .blog .slider .slides li img {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        
+        }
+        .blog .slider {
+    
+            position: relative;
+            height: 450px !important;
+            width: 100%;
+        
+        }
+        .blog .slider .slides {
+    
+            background-color: #9e9e9e;
+            margin: 0;
+            height: 400px !important;
+        
+        }
+        .blog .slider .slides li img {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        
+        }
+        .slider {
+    
+            position: relative;
+            height: 300px !important;
+            width: 100%;
+        
+        }
+        .slider .slides {
+    
+            background-color: #9e9e9e;
+            margin: 0;
+            height: 300px !important;
+        
+        }
+        .slide{
+            display: none;
+        }
+        .slideM{
+            height: 300px !important;
+            visibility: initial;
+        }
     }
 
 }
