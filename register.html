@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/alertify.css">
     <link rel="icon" type="image/png" href="favicon.png" />
     <meta name="theme-color" content="#e69221">
     <title>MyGen - Activate</title>
@@ -54,11 +55,11 @@
                 <h6>What is your sex?</h6>
                 <p>
                     <label for="male">
-                        <input class="with-gap" id="male" name="gender" value="" type="radio" required />
+                        <input class="with-gap gender" id="male" name="gender" value="" type="radio" required />
                         <span for="male">Male</span>
                     </label>
                     <label for="female">
-                        <input class="with-gap" id="female" name="gender" value="" type="radio" required />
+                        <input class="with-gap gender" id="female" name="gender" value="" type="radio" required />
                         <span for="female">Female</span>
                     </label>
                 </p>
@@ -86,7 +87,7 @@
                 </div>   
                 <div class="col s12 center-align">
                     <br><br>
-                    <button class="shop center" type="submit" name="action">
+                    <button class="shop center" type="submit" id="submit" name="action">
                         CREATE ACCOUNT
                     </button>
                    
@@ -132,6 +133,8 @@
     <script src="js/addCart.js"></script>
     <script src="js/order.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/alertify.min.js"></script>
+    <script src="js/validate.js"></script>
     <script>
         $(document).ready(function () {
 

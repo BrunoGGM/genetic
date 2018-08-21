@@ -164,6 +164,7 @@ main {
     border-radius: 50%;
     position: relative;
     background-color: #c5c5c5;
+    margin-bottom: 80px;
 }
 
 .successImg{
@@ -255,6 +256,7 @@ main {
     margin: 5px;
     float: left;
     width: 12%;
+    height: 160px;
 }
 
 #linkFooter ul#form {
@@ -368,6 +370,10 @@ nav .brand-logo div {
     font-size: 14pt;
 }
 
+.productCart{
+    margin-top: 15px;
+}
+
 /*impares*/
 
 .goalsTable div:nth-child(2n+1) {
@@ -384,7 +390,7 @@ nav .brand-logo div {
     border: 1px black solid;
     padding: 8px;
     margin: 5px;
-    height: 49px;
+    min-height: 49px;
 }
 
 .goalsTableContent div:nth-child(2n+1) {
@@ -496,6 +502,11 @@ nav .brand-logo div {
     margin-top: 50px;
 }
 
+
+#secondMainImg div {
+    height: 156px;
+}
+
 #thirdMain {
     background-image: url('../img/bgThird.jpg');
     display: inline-block;
@@ -517,8 +528,9 @@ nav .brand-logo div {
 }
 
 #benefits div {
-    min-height: 250px;
+    min-height: 300px;
 }
+ 
 
 .benefits-img {
     height: 70px;
@@ -582,13 +594,61 @@ nav .brand-logo div {
     border-radius: 50%;
 }
 
-#sport {
+#sport{
+    cursor: pointer;
+}
+
+#weight{
+    cursor: pointer;
+}
+#beauty{
+    cursor: pointer;
+}
+
+#wellness{
+    cursor: pointer;
+}
+#sportTable {
     background-image: url(../img/sport.jpg);
     width: 100%;
     padding: 0px;
+    background-size: cover;
 }
 
-#sport>div {
+#sportTable>div {
+    padding: 20px;
+}
+
+#weightTable {
+    background-image: url(../img/weight.jpg);
+    width: 100%;
+    padding: 0px;
+    background-size: cover;
+}
+
+#weightTable>div {
+    padding: 20px;
+}
+
+#beautyTable {
+    background-image: url(../img/beauty.jpg);
+    width: 100%;
+    padding: 0px;
+    background-size: cover;
+}
+
+#beautyTable>div {
+    padding: 20px;
+}
+
+#wellnessTable {
+    background-image: url(../img/wellness.jpg);
+    width: 100%;
+    padding: 0px;
+    background-size: cover;
+}
+
+#wellnessTable>div {
     padding: 20px;
 }
 
@@ -603,6 +663,7 @@ nav .brand-logo div {
 #selectGoals {
     background-color: rgba(255, 255, 255, 0.6);
     height: 666px;
+    display: inline-table;
 }
 
 .collapsible {
@@ -973,7 +1034,7 @@ catImg {
 
 .carousel .carousel-item {
     visibility: hidden;
-    width: 200px;
+    width: 150px !important;
     height: auto;
     position: absolute;
     top: 0;
@@ -1082,6 +1143,12 @@ infoCat {
         float: left;
         width: 50%;
     }
+    .fieldText{
+      
+        position: relative;
+        left: 32px !important;
+
+    }
 }
 
 @media(max-width: 600px) {
@@ -1103,5 +1170,12 @@ infoCat {
         margin: 5px;
         float: left;
         width: 90%;
+    }
+    
+    .fieldText{
+      
+        position: relative;
+        left: 32px !important;
+
     }
 }

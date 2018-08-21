@@ -1,6 +1,7 @@
 $(document).ready(function(){
-
+// esta variable se modifica para gregar mas preguntas 5,10,20,etc y que funcione   
 let cuestions = 4;
+//numero de pregunta actual, siempre debe comenzar en 1 y se modifica en la ejecucion del script
 let numCuestion = 1;
 
 $('#numQuestion').html(cuestions);

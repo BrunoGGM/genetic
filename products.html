@@ -99,19 +99,19 @@
             Depending on the number of tests selected, important discounts you will get.</p> <br>
             <center><p class="bold-text">MyGEN categories</p></center>
             <div id="secondMainImg" class="col s12">
-                <div class="col s6 m3">
+                <div class="col s6 m3" id="sport">
                     <img src="img/icons/muscles.svg"  class="wow fadeIn" data-wow-delay=".1s" alt="">
                     <p class="bold-text">Sports and active life</p>
                 </div>
-                <div class="col s6 m3">
+                <div class="col s6 m3" id="weight">
                     <img src="img/icons/waist.svg" class="wow fadeIn"  data-wow-delay=".2s" alt="">
                     <p class="bold-text">Weight control</p>
                 </div>
-                <div class="col s6 m3">
+                <div class="col s6 m3" id="beauty">
                     <img src="img/icons/make-up.svg" class="wow fadeIn" data-wow-delay=".3s" alt="">
                     <p class="bold-text">Beauty</p>
                 </div>
-                <div class="col s6 m3">
+                <div class="col s6 m3" id="wellness">
                     <img src="img/icons/lotus.svg" class="wow fadeIn" data-wow-delay=".4s" alt="">
                     <p class="bold-text">Wellness</p>
                 </div>
@@ -119,7 +119,7 @@
         </div>
     </div>
 
-    <div class="col s12 center-align" id="sport">
+    <div class="col s12 center-align table animated fadeIn" id="sportTable">
         <div class="col s12 m12 l6">
             <div class="col s10 m8 l8 push-s1 push-m2 push-l2" id="life">
                 <p class="bold-text left-align">SPORTS AND <br> ACTIVE LIFE</p>
@@ -140,11 +140,11 @@
                 </p>
             </div>
         </div>
-        <div class="col s12 m12 l6 hide-on-small-only" id="selectGoals">
-            <div class="col s12 bold-text ">
+        <div class="col s12 m12 l6" id="selectGoals">
+            <div class="col s12 bold-text">
                 <span class="left">SELECT YOUR GOALS - TRAITS</span>
                 <!-- Modal Trigger -->
-                <a href="#modal1" id="addCart" class="shop right black-text modal-trigger">ADD TO CART</a>
+                <a href="#modal1" class="shop right black-text modal-trigger addCart" >ADD TO CART</a>
             
             </div>
             <p class="col s12 left-align min-text2">Todos los genes utilizados en los productos MyGEN han sido cuidadosamente seleccionados y cuentan con
@@ -168,26 +168,26 @@
                 <div class="col s12 ">
                     <div class="col s1 m1"></div>
                     <div class="col s11 m10">
-                        <div class="col s1">Rank</div>
-                        <div class="col s2">Goal</div>
-                        <div class="col s2">Trait</div>
-                        <div class="col s2">Gene</div>
-                        <div class="col s4">Report</div>
+                        <div class="col s2 m1">Rank</div>
+                        <div class="col s2 m2">Goal</div>
+                        <div class="col s2 m2">Trait</div>
+                        <div class="col s2 m2">Gene</div>
+                        <div class="col s2 m4">Report</div>
                     </div>
                 </div>
 
                 <div class="col s12 goalsTable collapsible">
 
                     <li>
-                        <div class="col s1 m1"><label><input type="checkbox" class="producto collapsible-header" id="1" /><span></span></label></div>
-                        <div class="col s11 m10 goalsTableContent bold-text ">
-                            <div class="col s1">1</div>
-                            <div class="col s2">POWER</div>
-                            <div class="col s2">STRENGTH</div>
-                            <div class="col s2">ACTN3</div>
-                            <div class="col s4"><a href="" class="accent-text" >See sample report</a></div>
+                        <div class="col s2 m1"><label><input type="checkbox" class="producto collapsible-header" id="1" /><span></span></label></div>
+                        <div class="col s9 m10 goalsTableContent bold-text ">
+                            <div class="col s6 m1">1</div>
+                            <div class="col s6 m2">POWER</div>
+                            <div class="col s6 m2">STRENGTH</div>
+                            <div class="col s6 m2">ACTN3</div>
+                            <div class="col s12 m4"><a href="" class="accent-text" >See sample report</a></div>
                         </div>  
-                        <span class="col s12 min-text2 left-align collapsible-body">  
+                        <span class="col s12  min-text2 left-align collapsible-body">  
                             Are you built for speed and power? Your ACTN3 gene has the answer. This gene codes the protein α-actinin-3, which is
                             used in fast twitch muscle contraction. With this insight we can provide you an efficient supplement to enhance your
                             strength performance.
@@ -196,26 +196,26 @@
  
                    <br>
                     <li>
-                        <div class="col s1 m1"><label><input type="checkbox" class="producto collapsible-header" id="2"/><span></span></label></div>
-                        <div class="col s11 m10 goalsTableContent bold-text">
-                            <div class="col s1">2</div>
-                            <div class="col s2">POWER</div>
-                            <div class="col s2">RECOVERY</div>
-                            <div class="col s2">AMPD1</div>
-                            <div class="col s4"><a href="" class="accent-text">See sample report</a></div>
+                        <div class="col s2 m1"><label><input type="checkbox" class="producto collapsible-header" id="2"/><span></span></label></div>
+                        <div class="col s9 m10 goalsTableContent bold-text">
+                            <div class="col s6 m1">2</div>
+                            <div class="col s6 m2">POWER</div>
+                            <div class="col s6 m2">RECOVERY</div>
+                            <div class="col s6 m2">AMPD1</div>
+                            <div class="col s12 m4"><a href="" class="accent-text">See sample report</a></div>
                         </div>
                         <span class="col s12 min-text2 left-align collapsible-body">  
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem deleniti nostrum, maxime adipisci ut? Dolor harum, minima ducimus a qui eveniet eos. Porro ducimus perspiciatis ipsam suscipit animi deserunt.
                        </span>                         
                     </li>
                     <li>
-                        <div class="col s1 m1"><label><input type="checkbox" class="producto collapsible-header" id="3" /><span></span></label></div>
-                        <div class="col s11 m10 goalsTableContent bold-text">
-                            <div class="col s1">3</div>
-                            <div class="col s2">POWER</div>
-                            <div class="col s2">CAFFEINE</div>
-                            <div class="col s2">CYP1A2</div>
-                            <div class="col s4"><a href="" class="accent-text" >See sample report</a></div>
+                        <div class="col s2 m1"><label><input type="checkbox" class="producto collapsible-header" id="3" /><span></span></label></div>
+                        <div class="col s9 m10 goalsTableContent bold-text">
+                            <div class="col s6 m1">3</div>
+                            <div class="col s6 m2">POWER</div>
+                            <div class="col s6 m2">CAFFEINE</div>
+                            <div class="col s6 m2">CYP1A2</div>
+                            <div class="col s12 m4"><a href="" class="accent-text" >See sample report</a></div>
                         </div>
                         <span class="col s12 min-text2 left-align collapsible-body">  
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem deleniti nostrum, maxime adipisci ut? Dolor harum, minima ducimus a qui eveniet eos. Porro ducimus perspiciatis ipsam suscipit animi deserunt.
@@ -224,7 +224,329 @@
                 </div>
 
              </div>   
-        </div>
+    </div>
+
+    <div class="col s12 center-align table hide animated fadeIn" id="weightTable">
+            <div class="col s12 m12 l6">
+                <div class="col s10 m8 l8 push-s1 push-m2 push-l2" id="life">
+                    <p class="bold-text left-align">Weight Control</p>
+                    <p class="left-align">
+                            Saca el máximo <br>
+                            provecho de tu <br>
+                            entrenamiento <br>
+                            conociendo como tus <br>
+                            genes influyen en tu <br>
+                            rendimiento <br>
+                            deportivo. Refuerza <br>
+                            tus debilidades <br>
+                            físicas y potencia tus <br>
+                            habilidades con <br>
+                            MyGen Supplements <br> 
+                            Sport formulados de <br>
+                            acuerdo a tus genes. <br>
+                    </p>
+                </div>
+            </div>
+            <div class="col s12 m12 l6" id="selectGoals">
+                <div class="col s12 bold-text">
+                    <span class="left">SELECT YOUR GOALS - TRAITS</span>
+                    <!-- Modal Trigger -->
+                    <a href="#modal1" class="shop right black-text modal-trigger addCart">ADD TO CART</a>
+                
+                </div>
+                <p class="col s12 left-align min-text2">Todos los genes utilizados en los productos MyGEN han sido cuidadosamente seleccionados y cuentan con
+                        numerosa evidencia científica. Los genes han sido ordenados de acuerdo a su relevancia para el objetivo, siendo
+                        el numero 1 el gen con mayor impacto relativo en el objetivo. 
+                        
+                    <a id="helpGoals" class="tooltipped accent-text" style="font-size: 20px" data-position="left" 
+                    data-tooltip="El Ranking se construye en base a los siguientes puntos: <br>
+                    1. Evidencia científica del impacto del gen y sus variantes en el objetivo. <br>
+                    2. Distribución de la variantes del gen en la población. <br>
+                    3. Impacto de la alimentación sobre la funcionalidad del gen <br>">
+                        <i class="material-icons"  >help_outline</i>
+                    </a>
+                </p> <br><br>
+                <p class="col s12 left-align min-text2">Puedes comenzar seleccionando un gen y de acuerdo a tu genotipo formularemos tu suplemento personalizado.
+                    Sin embargo, mientras más test genéticos te realices, más información recopilaremos y las formulaciones de tus
+                    suplementos serán aún más efectivas.</p>
+    
+                 <ul class="col s12" >
+    
+                    <div class="col s12 ">
+                        <div class="col s1 m1"></div>
+                        <div class="col s11 m10">
+                            <div class="col s2 m1">Rank</div>
+                            <div class="col s2 m2">Goal</div>
+                            <div class="col s2 m2">Trait</div>
+                            <div class="col s2 m2">Gene</div>
+                            <div class="col s2 m4">Report</div>
+                        </div>
+                    </div>
+    
+                    <div class="col s12 goalsTable collapsible">
+    
+                        <li>
+                            <div class="col s2 m1"><label><input type="checkbox" class="producto collapsible-header" id="1" /><span></span></label></div>
+                            <div class="col s9 m10 goalsTableContent bold-text ">
+                                <div class="col s6 m1">1</div>
+                                <div class="col s6 m2">POWER</div>
+                                <div class="col s6 m2">STRENGTH</div>
+                                <div class="col s6 m2">ACTN3</div>
+                                <div class="col s12 m4"><a href="" class="accent-text" >See sample report</a></div>
+                            </div>  
+                            <span class="col s12  min-text2 left-align collapsible-body">  
+                                Are you built for speed and power? Your ACTN3 gene has the answer. This gene codes the protein α-actinin-3, which is
+                                used in fast twitch muscle contraction. With this insight we can provide you an efficient supplement to enhance your
+                                strength performance.
+                           </span>  
+                        </li>
+     
+                       <br>
+                        <li>
+                            <div class="col s2 m1"><label><input type="checkbox" class="producto collapsible-header" id="2"/><span></span></label></div>
+                            <div class="col s9 m10 goalsTableContent bold-text">
+                                <div class="col s6 m1">2</div>
+                                <div class="col s6 m2">POWER</div>
+                                <div class="col s6 m2">RECOVERY</div>
+                                <div class="col s6 m2">AMPD1</div>
+                                <div class="col s12 m4"><a href="" class="accent-text">See sample report</a></div>
+                            </div>
+                            <span class="col s12 min-text2 left-align collapsible-body">  
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem deleniti nostrum, maxime adipisci ut? Dolor harum, minima ducimus a qui eveniet eos. Porro ducimus perspiciatis ipsam suscipit animi deserunt.
+                           </span>                         
+                        </li>
+                        <li>
+                            <div class="col s2 m1"><label><input type="checkbox" class="producto collapsible-header" id="3" /><span></span></label></div>
+                            <div class="col s9 m10 goalsTableContent bold-text">
+                                <div class="col s6 m1">3</div>
+                                <div class="col s6 m2">POWER</div>
+                                <div class="col s6 m2">CAFFEINE</div>
+                                <div class="col s6 m2">CYP1A2</div>
+                                <div class="col s12 m4"><a href="" class="accent-text" >See sample report</a></div>
+                            </div>
+                            <span class="col s12 min-text2 left-align collapsible-body">  
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem deleniti nostrum, maxime adipisci ut? Dolor harum, minima ducimus a qui eveniet eos. Porro ducimus perspiciatis ipsam suscipit animi deserunt.
+                            </span>     
+                        </li>
+                    </div>
+    
+                 </div>   
+    </div>
+
+    <div class="col s12 center-align table hide animated fadeIn" id="beautyTable">
+            <div class="col s12 m12 l6">
+                <div class="col s10 m8 l8 push-s1 push-m2 push-l2" id="life">
+                    <p class="bold-text left-align">Beauty</p>
+                    <p class="left-align">
+                            Saca el máximo <br>
+                            provecho de tu <br>
+                            entrenamiento <br>
+                            conociendo como tus <br>
+                            genes influyen en tu <br>
+                            rendimiento <br>
+                            deportivo. Refuerza <br>
+                            tus debilidades <br>
+                            físicas y potencia tus <br>
+                            habilidades con <br>
+                            MyGen Supplements <br> 
+                            Sport formulados de <br>
+                            acuerdo a tus genes. <br>
+                    </p>
+                </div>
+            </div>
+            <div class="col s12 m12 l6" id="selectGoals">
+                <div class="col s12 bold-text">
+                    <span class="left">SELECT YOUR GOALS - TRAITS</span>
+                    <!-- Modal Trigger -->
+                    <a href="#modal1" class="shop right black-text modal-trigger addCart" >ADD TO CART</a>
+                
+                </div>
+                <p class="col s12 left-align min-text2">Todos los genes utilizados en los productos MyGEN han sido cuidadosamente seleccionados y cuentan con
+                        numerosa evidencia científica. Los genes han sido ordenados de acuerdo a su relevancia para el objetivo, siendo
+                        el numero 1 el gen con mayor impacto relativo en el objetivo. 
+                        
+                    <a id="helpGoals" class="tooltipped accent-text" style="font-size: 20px" data-position="left" 
+                    data-tooltip="El Ranking se construye en base a los siguientes puntos: <br>
+                    1. Evidencia científica del impacto del gen y sus variantes en el objetivo. <br>
+                    2. Distribución de la variantes del gen en la población. <br>
+                    3. Impacto de la alimentación sobre la funcionalidad del gen <br>">
+                        <i class="material-icons"  >help_outline</i>
+                    </a>
+                </p> <br><br>
+                <p class="col s12 left-align min-text2">Puedes comenzar seleccionando un gen y de acuerdo a tu genotipo formularemos tu suplemento personalizado.
+                    Sin embargo, mientras más test genéticos te realices, más información recopilaremos y las formulaciones de tus
+                    suplementos serán aún más efectivas.</p>
+    
+                 <ul class="col s12" >
+    
+                    <div class="col s12 ">
+                        <div class="col s1 m1"></div>
+                        <div class="col s11 m10">
+                            <div class="col s2 m1">Rank</div>
+                            <div class="col s2 m2">Goal</div>
+                            <div class="col s2 m2">Trait</div>
+                            <div class="col s2 m2">Gene</div>
+                            <div class="col s2 m4">Report</div>
+                        </div>
+                    </div>
+    
+                    <div class="col s12 goalsTable collapsible">
+    
+                        <li>
+                            <div class="col s2 m1"><label><input type="checkbox" class="producto collapsible-header" id="1" /><span></span></label></div>
+                            <div class="col s9 m10 goalsTableContent bold-text ">
+                                <div class="col s6 m1">1</div>
+                                <div class="col s6 m2">POWER</div>
+                                <div class="col s6 m2">STRENGTH</div>
+                                <div class="col s6 m2">ACTN3</div>
+                                <div class="col s12 m4"><a href="" class="accent-text" >See sample report</a></div>
+                            </div>  
+                            <span class="col s12  min-text2 left-align collapsible-body">  
+                                Are you built for speed and power? Your ACTN3 gene has the answer. This gene codes the protein α-actinin-3, which is
+                                used in fast twitch muscle contraction. With this insight we can provide you an efficient supplement to enhance your
+                                strength performance.
+                           </span>  
+                        </li>
+     
+                       <br>
+                        <li>
+                            <div class="col s2 m1"><label><input type="checkbox" class="producto collapsible-header" id="2"/><span></span></label></div>
+                            <div class="col s9 m10 goalsTableContent bold-text">
+                                <div class="col s6 m1">2</div>
+                                <div class="col s6 m2">POWER</div>
+                                <div class="col s6 m2">RECOVERY</div>
+                                <div class="col s6 m2">AMPD1</div>
+                                <div class="col s12 m4"><a href="" class="accent-text">See sample report</a></div>
+                            </div>
+                            <span class="col s12 min-text2 left-align collapsible-body">  
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem deleniti nostrum, maxime adipisci ut? Dolor harum, minima ducimus a qui eveniet eos. Porro ducimus perspiciatis ipsam suscipit animi deserunt.
+                           </span>                         
+                        </li>
+                        <li>
+                            <div class="col s2 m1"><label><input type="checkbox" class="producto collapsible-header" id="3" /><span></span></label></div>
+                            <div class="col s9 m10 goalsTableContent bold-text">
+                                <div class="col s6 m1">3</div>
+                                <div class="col s6 m2">POWER</div>
+                                <div class="col s6 m2">CAFFEINE</div>
+                                <div class="col s6 m2">CYP1A2</div>
+                                <div class="col s12 m4"><a href="" class="accent-text" >See sample report</a></div>
+                            </div>
+                            <span class="col s12 min-text2 left-align collapsible-body">  
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem deleniti nostrum, maxime adipisci ut? Dolor harum, minima ducimus a qui eveniet eos. Porro ducimus perspiciatis ipsam suscipit animi deserunt.
+                            </span>     
+                        </li>
+                    </div>
+    
+                 </div>   
+    </div>
+
+
+    <div class="col s12 center-align table hide animated fadeIn" id="wellnessTable">
+            <div class="col s12 m12 l6">
+                <div class="col s10 m8 l8 push-s1 push-m2 push-l2" id="life">
+                    <p class="bold-text left-align">Wellness</p>
+                    <p class="left-align">
+                            Saca el máximo <br>
+                            provecho de tu <br>
+                            entrenamiento <br>
+                            conociendo como tus <br>
+                            genes influyen en tu <br>
+                            rendimiento <br>
+                            deportivo. Refuerza <br>
+                            tus debilidades <br>
+                            físicas y potencia tus <br>
+                            habilidades con <br>
+                            MyGen Supplements <br> 
+                            Sport formulados de <br>
+                            acuerdo a tus genes. <br>
+                    </p>
+                </div>
+            </div>
+            <div class="col s12 m12 l6" id="selectGoals">
+                <div class="col s12 bold-text">
+                    <span class="left">SELECT YOUR GOALS - TRAITS</span>
+                    <!-- Modal Trigger -->
+                    <a href="#modal1" class="shop right black-text modal-trigger addCart" >ADD TO CART</a>
+                
+                </div>
+                <p class="col s12 left-align min-text2">Todos los genes utilizados en los productos MyGEN han sido cuidadosamente seleccionados y cuentan con
+                        numerosa evidencia científica. Los genes han sido ordenados de acuerdo a su relevancia para el objetivo, siendo
+                        el numero 1 el gen con mayor impacto relativo en el objetivo. 
+                        
+                    <a id="helpGoals" class="tooltipped accent-text" style="font-size: 20px" data-position="left" 
+                    data-tooltip="El Ranking se construye en base a los siguientes puntos: <br>
+                    1. Evidencia científica del impacto del gen y sus variantes en el objetivo. <br>
+                    2. Distribución de la variantes del gen en la población. <br>
+                    3. Impacto de la alimentación sobre la funcionalidad del gen <br>">
+                        <i class="material-icons"  >help_outline</i>
+                    </a>
+                </p> <br><br>
+                <p class="col s12 left-align min-text2">Puedes comenzar seleccionando un gen y de acuerdo a tu genotipo formularemos tu suplemento personalizado.
+                    Sin embargo, mientras más test genéticos te realices, más información recopilaremos y las formulaciones de tus
+                    suplementos serán aún más efectivas.</p>
+    
+                 <ul class="col s12" >
+    
+                    <div class="col s12 ">
+                        <div class="col s1 m1"></div>
+                        <div class="col s11 m10">
+                            <div class="col s2 m1">Rank</div>
+                            <div class="col s2 m2">Goal</div>
+                            <div class="col s2 m2">Trait</div>
+                            <div class="col s2 m2">Gene</div>
+                            <div class="col s2 m4">Report</div>
+                        </div>
+                    </div>
+    
+                    <div class="col s12 goalsTable collapsible">
+    
+                        <li>
+                            <div class="col s2 m1"><label><input type="checkbox" class="producto collapsible-header" id="1" /><span></span></label></div>
+                            <div class="col s9 m10 goalsTableContent bold-text ">
+                                <div class="col s6 m1">1</div>
+                                <div class="col s6 m2">POWER</div>
+                                <div class="col s6 m2">STRENGTH</div>
+                                <div class="col s6 m2">ACTN3</div>
+                                <div class="col s12 m4"><a href="" class="accent-text" >See sample report</a></div>
+                            </div>  
+                            <span class="col s12  min-text2 left-align collapsible-body">  
+                                Are you built for speed and power? Your ACTN3 gene has the answer. This gene codes the protein α-actinin-3, which is
+                                used in fast twitch muscle contraction. With this insight we can provide you an efficient supplement to enhance your
+                                strength performance.
+                           </span>  
+                        </li>
+     
+                       <br>
+                        <li>
+                            <div class="col s2 m1"><label><input type="checkbox" class="producto collapsible-header" id="2"/><span></span></label></div>
+                            <div class="col s9 m10 goalsTableContent bold-text">
+                                <div class="col s6 m1">2</div>
+                                <div class="col s6 m2">POWER</div>
+                                <div class="col s6 m2">RECOVERY</div>
+                                <div class="col s6 m2">AMPD1</div>
+                                <div class="col s12 m4"><a href="" class="accent-text">See sample report</a></div>
+                            </div>
+                            <span class="col s12 min-text2 left-align collapsible-body">  
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem deleniti nostrum, maxime adipisci ut? Dolor harum, minima ducimus a qui eveniet eos. Porro ducimus perspiciatis ipsam suscipit animi deserunt.
+                           </span>                         
+                        </li>
+                        <li>
+                            <div class="col s2 m1"><label><input type="checkbox" class="producto collapsible-header" id="3" /><span></span></label></div>
+                            <div class="col s9 m10 goalsTableContent bold-text">
+                                <div class="col s6 m1">3</div>
+                                <div class="col s6 m2">POWER</div>
+                                <div class="col s6 m2">CAFFEINE</div>
+                                <div class="col s6 m2">CYP1A2</div>
+                                <div class="col s12 m4"><a href="" class="accent-text" >See sample report</a></div>
+                            </div>
+                            <span class="col s12 min-text2 left-align collapsible-body">  
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem deleniti nostrum, maxime adipisci ut? Dolor harum, minima ducimus a qui eveniet eos. Porro ducimus perspiciatis ipsam suscipit animi deserunt.
+                            </span>     
+                        </li>
+                    </div>
+    
+                 </div>   
+    </div>
     </div>
  <!-- Modal Structure -->
     <div id="modal1" class="modal">
@@ -394,6 +716,7 @@
     <script src="js/materialize.min.js"></script>
     <script src="js/addCart.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/products.js"></script>
     <script>
       $(document).ready(function(){
 
