@@ -499,12 +499,24 @@ nav .brand-logo div {
     padding: 50px 0px 50px 0px;
 }
 
+#secondMainP {
+    background-color: #f6f6f5;
+    padding: 50px 0px 50px 0px;
+}
+
 #secondMainImg {
     margin-top: 50px;
 }
 
+#secondMainImgP {
+    margin-top: 50px;
+}
 
 #secondMainImg div {
+    height: auto;
+}
+
+#secondMainImgP div {
     height: 156px;
 }
 
@@ -521,6 +533,11 @@ nav .brand-logo div {
     height: 70px;
     width: 70px;
 }
+#secondMainImgP img {
+    padding: 8px 8px 8px 8px;
+    height: 70px;
+    width: 70px;
+}
 
 #benefits p {
     position: relative;
@@ -529,7 +546,12 @@ nav .brand-logo div {
 }
 
 #benefits div {
-    min-height: 300px;
+    min-height: 325px;
+}
+ 
+
+#benefits p {
+    min-height: 72px;
 }
  
 
