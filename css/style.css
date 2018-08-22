@@ -1147,10 +1147,7 @@ nav ul a:hover {
 .slideM{
     visibility: hidden;
 }
-.notCompatible{
-    
-    display: none;
-}
+
 @media(max-width: 1280px) {
     nav {
         padding: 0px 2% 0px 2%;
@@ -1478,46 +1475,6 @@ nav ul a:hover {
             margin-top: 10px !important;
             min-height: 49px;
         }    
-   /* #sportTable{
-        height: 360px;
-        width: 100%;
-        background-image: url('../img/rotate.gif');
-        background-color: gray;
-    }
-    #sportTable div{
-        display: none;
-    }
-    #weightTable div{
-        display: none;
-    }
-
-    #weightTable{
-        height: 360px;
-        width: 100%;
-        background-image: url('../img/rotate.gif');
-        background-color: gray;
-    }
-    #beautyTable div{
-        display: none;
-    }
-
-    #beautyTable{
-        height: 360px;
-        width: 100%;
-        background-image: url('../img/rotate.gif');
-        background-color: gray;
-    }
-
-    #wellnessTable div{
-        display: none;
-    }
-
-    #wellnessTable{
-        height: 360px;
-        width: 100%;
-        background-image: url('../img/rotate.gif');
-        background-color: gray;
-    }*/
     @media all and (orientation:landscape){
         .blog .slider .slides li img {
             width: 100%;
