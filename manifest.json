@@ -1,0 +1,16 @@
+{
+  "short_name": "MyGEN",
+  "name": "MyGEN",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "fullscreen",
+  "theme_color": "#e69221",
+  "background_color": "#fff"
+
+}
