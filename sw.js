@@ -13,7 +13,8 @@ var urlsToCache = [
     'js/jquery-3.3.1.min.js',
     'js/alertify.min.js',
     'img/slides/slide1.jpg',
-    'img/slides/slide1m.jpg'
+		'img/slides/slide1m.jpg',
+		'https://fonts.googleapis.com/icon?family=Material+Icons'
 ];
 
 self.addEventListener('install', function(event) {
@@ -29,21 +30,20 @@ self.addEventListener('install', function(event) {
 		})
 	)
 });
-
-self.addEventListener('fetch', function(event) {
-	event.respondWith(
-	  caches.match(event.request)
-		.then(function(response) {
-		  // Cache hit - return response
-		  if (response) {
-				console.log('got it from cache', event.request);
-				return response;
-		  }
-		  return fetch(event.request);
-		}
-	  )
-	);
-  });
+	
+	this.addEventListener("fetch", function(event) {
+		event.respondWith(
+			fetch(event.request).then(function(response) {
+				return caches.open("1").then(function(cache) {
+					return cache.put(event.request, response.clone()).then(function() {
+						return response
+					})
+				})
+			}).catch(function() {
+				return caches.match(event.request)
+			})
+		)
+	})	
   
 self.addEventListener("activate", function(event) {  
 	event.waitUntil(
