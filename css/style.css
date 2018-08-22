@@ -685,7 +685,7 @@ nav .brand-logo div {
 
 #selectGoals {
     background-color: rgba(255, 255, 255, 0.6);
-    height: 666px;
+    min-height: 666px;
     display: inline-table;
 }
 
@@ -1029,7 +1029,7 @@ nav ul a:hover {
     transform: translateX(-50%);
 }
 
-catImg {
+.catImg {
     width: 120px;
     height: 120px;
     position: relative;
@@ -1068,13 +1068,13 @@ catImg {
     width: 150px;
 }
 
-catText {
+.catText {
     position: relative;
     top: -10px;
     color: #000 !important;
 }
 
-infoCat {
+.infoCat {
     width: 150px;
 }
 
@@ -1144,6 +1144,13 @@ infoCat {
     opacity: 0;
 }
 
+.slideM{
+    visibility: hidden;
+}
+.notCompatible{
+    
+    display: none;
+}
 @media(max-width: 1280px) {
     nav {
         padding: 0px 2% 0px 2%;
@@ -1173,6 +1180,123 @@ infoCat {
 
     }
 }
+@media(max-width: 992px) {
+
+    .slider .slides li img {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    
+    }
+    .slider {
+
+        position: relative;
+        height: 300px !important;
+        width: 100%;
+    
+    }
+    .slider .slides {
+
+        background-color: #9e9e9e;
+        margin: 0;
+        height: 300px !important;
+    
+    }
+    .slide{
+        display: none;
+    }
+    .slideM{
+        height: 300px !important;
+        visibility: initial;
+    }
+    .blog .slider .slides li img {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    
+    }
+    .blog .slider {
+
+        position: relative;
+        height: 450px !important;
+        width: 100%;
+    
+    }
+    .blog .slider .slides {
+
+        background-color: #9e9e9e;
+        margin: 0;
+        height: 400px !important;
+    
+    }
+    .blog .slider .slides li img {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    
+    }
+    @media all and (orientation:landscape){
+        .rotate{
+            display: none;
+        }
+
+        .slider .slides li img {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        
+        }
+        .slider {
+    
+            position: relative;
+            height: 400px !important;
+            width: 100%;
+        
+        }
+        .slider .slides {
+    
+            background-color: #9e9e9e;
+            margin: 0;
+            height: 400px !important;
+        
+        }
+        .slide{
+            display: none;
+        }
+        .slideM{
+            height: 400px !important;
+            visibility: initial;
+        }
+        .blog .slider .slides li img {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        
+        }
+        .blog .slider {
+    
+            position: relative;
+            height: 450px !important;
+            width: 100%;
+        
+        }
+        .blog .slider .slides {
+    
+            background-color: #9e9e9e;
+            margin: 0;
+            height: 400px !important;
+        
+        }
+        .blog .slider .slides li img {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        
+        }
+    }
+
+
+}
 
 @media(max-width: 600px) {
     nav .brand-logo div {
@@ -1180,13 +1304,7 @@ infoCat {
         padding: 0px 0px 0px 0px;
         transition: .3s;
     }
-    .slider .slides li img {
-        height: 100%;
-        width: 100%;
-        background-size: cover;
-        background-position: right;
-    }
-    #linkFooter {
+   #linkFooter {
         font-size: 14px;
         padding: 50px 0px 50px 0px;
     }
@@ -1214,6 +1332,240 @@ infoCat {
         flex-direction: column;
         font-size: 16px;
         display: flex;
+    }
+    
+    .slider .slides li img {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    
+    }
+    .slider {
+
+        position: relative;
+        height: 210px !important;
+        width: 100%;
+    
+    }
+    .slider .slides {
+
+        background-color: #9e9e9e;
+        margin: 0;
+        height: 210px !important;
+    
+    }
+    .slide{
+        display: none;
+    }
+    .slideM{
+        height: 210px !important;
+        visibility: initial;
+    }
+    .blog .slider .slides li img {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    
+    }
+    .blog .slider {
+
+        position: relative;
+        height: 450px !important;
+        width: 100%;
+    
+    }
+    .blog .slider .slides {
+
+        background-color: #9e9e9e;
+        margin: 0;
+        height: 400px !important;
+    
+    }
+    .blog .slider .slides li img {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    
+    }
+    #testing .slider .slides li img {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    
+    }
+    #testing  .slider {
+
+        position: relative;
+        height: 400px !important;
+        width: 100%;
+    
+    }
+    #testing  .slider .slides {
+
+        background-color: #dbdbdb;
+        margin: 0;
+        height: 400px !important;
+    
+    }
+    #testing  .slider .slides li img {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    
+    }
+    #selectGoals .row .col {
+
+            float: left;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 0rem !important;
+            min-height: 1px;
+        
+    }
+    #selectGoals ul{
+        padding: 0rem !important;
+
+    }
+    .goalsTable{
+        padding: 0rem !important;
+    }
+    .goalsTable div:nth-child(2n) {
+        border: 1px black solid;
+        padding: 0px !important;
+        margin: 0px !important;
+        min-height: 49px;
+    }
+    .goalsTable div:nth-child(2n+1) {
+
+        border: 1px #e69221 solid;
+        color: #e69221;
+        padding: 0px !important;
+        margin: 0px !important;
+        height: 50px;
+    
+    }
+        .goalsTableContent{
+        padding: 0px;
+        margin: 0px;
+        font-size: 8pt;
+        border: 1px black solid !important;
+        }
+        .checkProducto{
+        border: 1px #e69221 solid !important;
+
+        }
+        .checkProducto label {
+            font-size: .8rem;
+            color: #9e9e9e;
+            position: relative;
+            top: 10px;
+            left: 5px;
+        }
+        .collapsible-body{
+            margin-top: 15px;
+        }
+
+        .goalsTable div:nth-child(2n+1) {
+            border: none;
+            color: #e69221;
+            padding: 0px !important;
+            margin-top: 10px !important;
+            height: 50px;
+        }
+        .goalsTable div:nth-child(2n) {
+            border: none;
+            padding: 0px !important;
+            margin-top: 10px !important;
+            min-height: 49px;
+        }    
+   /* #sportTable{
+        height: 360px;
+        width: 100%;
+        background-image: url('../img/rotate.gif');
+        background-color: gray;
+    }
+    #sportTable div{
+        display: none;
+    }
+    #weightTable div{
+        display: none;
+    }
+
+    #weightTable{
+        height: 360px;
+        width: 100%;
+        background-image: url('../img/rotate.gif');
+        background-color: gray;
+    }
+    #beautyTable div{
+        display: none;
+    }
+
+    #beautyTable{
+        height: 360px;
+        width: 100%;
+        background-image: url('../img/rotate.gif');
+        background-color: gray;
+    }
+
+    #wellnessTable div{
+        display: none;
+    }
+
+    #wellnessTable{
+        height: 360px;
+        width: 100%;
+        background-image: url('../img/rotate.gif');
+        background-color: gray;
+    }*/
+    @media all and (orientation:landscape){
+        .blog .slider .slides li img {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        
+        }
+        .blog .slider {
+    
+            position: relative;
+            height: 450px !important;
+            width: 100%;
+        
+        }
+        .blog .slider .slides {
+    
+            background-color: #9e9e9e;
+            margin: 0;
+            height: 400px !important;
+        
+        }
+        .blog .slider .slides li img {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        
+        }
+        .slider {
+    
+            position: relative;
+            height: 300px !important;
+            width: 100%;
+        
+        }
+        .slider .slides {
+    
+            background-color: #9e9e9e;
+            margin: 0;
+            height: 300px !important;
+        
+        }
+        .slide{
+            display: none;
+        }
+        .slideM{
+            height: 300px !important;
+            visibility: initial;
+        }
     }
 
 }
