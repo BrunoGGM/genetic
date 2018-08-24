@@ -542,172 +542,204 @@
     </div>
 <!--============================== LOGIN ===========================-->  
 <!--============================== SHOP ===========================--> 
-    <div id="shop" class="modal">
-        <div class="modal-content center-align rotateOutDownLeft row padding0 paddingTop15 ">
-                <div class="col s12 center">
-                        <div class="input-field col s12 m5">
-                            <select id="categoryForm" name="categoryForm"">
-                                <option value="" disabled selected>Category</option>
-                                <option value="1">SPORT</option>
-                                <option value="2">NUTRI</option>
-                                <option value="3">SKIN</option>
-                                <option value="4">WELLNESS</option>
-                            </select>
-                            <label>Category</label>
-                        </div>
-                        <div class="input-field col s12 m5">
-                            <select id="goalForm" name="goalForm">
-                                <option value="" disabled selected>Goal</option>
-                            </select>
-                            <label>Goal</label>
-                        </div>
-                        <button type="submit" id="go" class="col s4 m2 push-s4 orange waves-effect center-align btn-large white-text">
-                            GO!
-                        </button>
-                        <div class="col s12 center-align" id="already">
-        
-                            <p>Already MyGEN member? </p>
-        
-                            <span>
-                                <a href="" class="orange-text">Sign In here </a> to check your results, Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            </span>
-                        </div>
+<div id="shop" class="modal">
+    <div class="modal-content center-align rotateOutDownLeft row padding0 paddingTop15 ">
+        <div class="col s12 center">
+            <div class="input-field col s12 m5">
+                <select id="categoryForm">
+                    <option value="" disabled selected>Category</option>
+                    <option value="1">SPORT</option>
+                    <option value="2">NUTRI</option>
+                    <option value="3">SKIN</option>
+                    <option value="4">WELLNESS</option>
+                </select>
+                <label>Category</label>
+            </div>
+            <div class="input-field col s12 m5">
+                <select id="goalForm">
+                    <option value="" disabled selected>Goal</option>
+                </select>
+                <label>Goal</label>
+            </div>
+            <button type="submit" id="go" class="col s4 m2 push-s4 orange waves-effect center-align btn-large white-text">
+                GO!
+            </button>
+            <div class="col s12 center-align" id="already">
 
-                        <div class="col s12 hide topBorderM marginTop30 paddingBottom15 left-align contentM" id="sportM">
-                            <h6>SPORT</h6>
-                            <div class="col s8">
+                <p>Already MyGEN member? </p>
+
+                <span>
+                    <a href="" class="orange-text">Sign In here </a> to check your results, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore
+                </span>
+            </div>
+
+            <div class="col s12 hide marginTop30 paddingBottom15 left-align contentM" id="sportM">
+                <div class="col s12 m6 padding15 marginTop30 left-align">
+                    <div class="col s12 grey lighten-5 padding0 borderRadius15px">
+
+                        <div class="col s12 headerSupp orange lighten-2 bold-text">
+                            SPORT
+                        </div>
+                        <div class="col s7 m6 l8 white min-text minGoal borderBottomLeftRadius50">
+                            <div class="col s12">
                                 <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                    Error delectus reiciendis amet quod architecto sed, voluptate 
-                                    possimus omnis dolorem ratione tempore, vitae minima cum, minus 
-                                    laudantium. Nemo doloremque accusamus quos?
+                                    Are you built for speed and power? Your DNA has the answer. Based on your genetic information we can provide you a personalized
+                                    supplement to enhance your strength performance.
                                 </p>
-                                <div class="col s12 center-align">
-                                    <span class="orange-text">Genetic</span> <br>
-                                    <a href="" class="orange-text">Sample report</a>
-                                </div>
-                                <div class="col s12 center-align marginTop30">
-                                    <span class="orange-text">Supplements</span> <br>
-                                    <a href="" class="orange-text">Sample report</a>
-                                </div>
-                                <div class="col s12 center-align marginTop30">
-                                    <a href="" class="shop black-text">Buy Now</a>
-                                </div>
                             </div>
-                            <div class="col s4 center-align">
-                                <h5>
-                                    5
-                                </h5>
-                                <p>
-                                    genes
-                                    analyzed
-                                </p>
-                                <i class="material-icons">add</i>
+                            <div class="col s12 m12 l6 marginTop30">
+                                <a href="" class="orange-text">
+                                    Supplement sample report
+                                </a>
+                            </div>
+                            <div class="col s12 m12 l6 marginTop30">
+                                <a href="" class="orange-text">
+                                    Genetic sample repor
+                                </a>
+                            </div>
+                            <div class="col s12 center-align marginTop30 marginBotom30">
+                                <a href="" class="shop black-text">BUY NOW</a>
                             </div>
                         </div>
-                        <div class="col s12 hide topBorderM marginTop30 paddingBottom15 left-align contentM" id="nutriM">
-                                <h6>Nutrition</h6>
-                                <div class="col s8">
-                                    <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                        Error delectus reiciendis amet quod architecto sed, voluptate 
-                                        possimus omnis dolorem ratione tempore, vitae minima cum, minus 
-                                        laudantium. Nemo doloremque accusamus quos?
-                                    </p>
-                                    <div class="col s12 center-align">
-                                        <span class="orange-text">Genetic</span> <br>
-                                        <a href="" class="orange-text">Sample report</a>
-                                    </div>
-                                    <div class="col s12 center-align marginTop30">
-                                        <span class="orange-text">Supplements</span> <br>
-                                        <a href="" class="orange-text">Sample report</a>
-                                    </div>
-                                    <div class="col s12 center-align marginTop30">
-                                        <a href="" class="shop black-text">Buy Now</a>
-                                    </div>
-                                </div>
-                                <div class="col s4 center-align">
-                                    <h5>
-                                        5
-                                    </h5>
-                                    <p>
-                                        genes
-                                        analyzed
-                                    </p>
-                                    <i class="material-icons">add</i>
-                                </div>
-                            </div> 
-                            <div class="col s12 hide topBorderM marginTop30 paddingBottom15 left-align contentM" id="skinM">
-                                    <h6>SKIN</h6>
-                                    <div class="col s8">
-                                        <p>
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                            Error delectus reiciendis amet quod architecto sed, voluptate 
-                                            possimus omnis dolorem ratione tempore, vitae minima cum, minus 
-                                            laudantium. Nemo doloremque accusamus quos?
-                                        </p>
-                                        <div class="col s12 center-align">
-                                            <span class="orange-text">Genetic</span> <br>
-                                            <a href="" class="orange-text">Sample report</a>
-                                        </div>
-                                        <div class="col s12 center-align marginTop30">
-                                            <span class="orange-text">Supplements</span> <br>
-                                            <a href="" class="orange-text">Sample report</a>
-                                        </div>
-                                        <div class="col s12 center-align marginTop30">
-                                            <a href="" class="shop black-text">Buy Now</a>
-                                        </div>
-                                    </div>
-                                    <div class="col s4 center-align">
-                                        <h5>
-                                            5
-                                        </h5>
-                                        <p>
-                                            genes
-                                            analyzed
-                                        </p>
-                                        <i class="material-icons">add</i>
-                                    </div>
-                                </div>     
-                                <div class="col s12 hide topBorderM marginTop30 paddingBottom15 left-align contentM" id="wellnessM">
-                                        <h6>wellness</h6>
-                                        <div class="col s8">
-                                            <p>
-                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                                Error delectus reiciendis amet quod architecto sed, voluptate 
-                                                possimus omnis dolorem ratione tempore, vitae minima cum, minus 
-                                                laudantium. Nemo doloremque accusamus quos?
-                                            </p>
-                                            <div class="col s12 center-align">
-                                                <span class="orange-text">Genetic</span> <br>
-                                                <a href="" class="orange-text">Sample report</a>
-                                            </div>
-                                            <div class="col s12 center-align marginTop30">
-                                                <span class="orange-text">Supplements</span> <br>
-                                                <a href="" class="orange-text">Sample report</a>
-                                            </div>
-                                            <div class="col s12 center-align marginTop30">
-                                                <a href="" class="shop black-text">Buy Now</a>
-                                            </div>
-                                        </div>
-                                        <div class="col s4 center-align">
-                                            <h5>
-                                                5
-                                            </h5>
-                                            <p>
-                                                genes
-                                                analyzed
-                                            </p>
-                                            <i class="material-icons">add</i>
-                                        </div>
-                                    </div>                                                                              
+                        <div class="col s5 m6 l4 grey lighten-5 min-text center-align minGoal borderBottomRightRadius50">
+                            <h5 class="paddingTop50">
+                                10
+                            </h5>
+                            <p>
+                                genes analyzed
+                            </p>
+                            <i class="material-icons">add</i>
+                        </div>
+                    </div>
                 </div>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-red btn-flat">CANCELAR</a>
+            </div>
+            <div class="col s12 hide marginTop30 paddingBottom15 left-align contentM" id="nutriM">
+                <div class="col s12 m6 padding15 marginTop30 left-align">
+                    <div class="col s12 grey lighten-5 padding0 borderRadius15px">
+
+                        <div class="col s12 headerSupp orange lighten-2 bold-text">
+                            NUTRUCION
+                        </div>
+                        <div class="col s7 m7 l8 white min-text minGoal borderBottomLeftRadius50">
+                            <div class="col s12">
+                                <p>
+                                    Are you built for speed and power? Your DNA has the answer. Based on your genetic information we can provide you a personalized
+                                    supplement to enhance your strength performance.
+                                </p>
+                            </div>
+                            <div class="col s12 m12 l6 marginTop30">
+                                <a href="" class="orange-text">
+                                    Supplement sample report
+                                </a>
+                            </div>
+                            <div class="col s12 m12 l6 marginTop30">
+                                <a href="" class="orange-text">
+                                    Genetic sample repor
+                                </a>
+                            </div>
+                            <div class="col s12 center-align marginTop30 marginBotom30">
+                                <a href="" class="shop black-text">BUY NOW</a>
+                            </div>
+                        </div>
+                        <div class="col s5 m5 l4 grey lighten-5 min-text center-align minGoal borderBottomRightRadius50">
+                            <h5 class="paddingTop50">
+                                5
+                            </h5>
+                            <p>
+                                genes analyzed
+                            </p>
+                            <i class="material-icons">add</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 hide marginTop30 paddingBottom15 left-align contentM" id="skinM">
+                <div class="col s12 m6 padding15 marginTop30 left-align">
+                    <div class="col s12 grey lighten-5 padding0 borderRadius15px">
+
+                        <div class="col s12 headerSupp orange lighten-2 bold-text">
+                            SKIN
+                        </div>
+                        <div class="col s7 m7 l8 white min-text minGoal borderBottomLeftRadius50">
+                            <div class="col s12">
+                                <p>
+                                    Are you built for speed and power? Your DNA has the answer. Based on your genetic information we can provide you a personalized
+                                    supplement to enhance your strength performance.
+                                </p>
+                            </div>
+                            <div class="col s12 m12 l6 marginTop30">
+                                <a href="" class="orange-text">
+                                    Supplement sample report
+                                </a>
+                            </div>
+                            <div class="col s12 m12 l6 marginTop30">
+                                <a href="" class="orange-text">
+                                    Genetic sample repor
+                                </a>
+                            </div>
+                            <div class="col s12 center-align marginTop30 marginBotom30">
+                                <a href="" class="shop black-text">BUY NOW</a>
+                            </div>
+                        </div>
+                        <div class="col s5 m5 l4 grey lighten-5 min-text center-align minGoal borderBottomRightRadius50">
+                            <h5 class="paddingTop50">
+                                3
+                            </h5>
+                            <p>
+                                genes analyzed
+                            </p>
+                            <i class="material-icons">add</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 hide marginTop30 paddingBottom15 left-align contentM" id="wellnessM">
+                <div class="col s12 m6 padding15 marginTop30 left-align">
+                    <div class="col s12 grey lighten-5 padding0 borderRadius15px">
+
+                        <div class="col s12 headerSupp orange lighten-2 bold-text">
+                            WELLNESS
+                        </div>
+                        <div class="col s7 m7 l8 white min-text minGoal borderBottomLeftRadius50">
+                            <div class="col s12">
+                                <p>
+                                    Are you built for speed and power? Your DNA has the answer. Based on your genetic information we can provide you a personalized
+                                    supplement to enhance your strength performance.
+                                </p>
+                            </div>
+                            <div class="col s12 m12 l6 marginTop30">
+                                <a href="" class="orange-text">
+                                    Supplement sample report
+                                </a>
+                            </div>
+                            <div class="col s12 m12 l6 marginTop30">
+                                <a href="" class="orange-text">
+                                    Genetic sample repor
+                                </a>
+                            </div>
+                            <div class="col s12 center-align marginTop30 marginBotom30">
+                                <a href="" class="shop black-text">BUY NOW</a>
+                            </div>
+                        </div>
+                        <div class="col s5 m5 l4 grey lighten-5 min-text center-align minGoal borderBottomRightRadius50">
+                            <h5 class="paddingTop50">
+                                8
+                            </h5>
+                            <p>
+                                genes analyzed
+                            </p>
+                            <i class="material-icons">add</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-red btn-flat">CANCELAR</a>
+    </div>
+</div>
 <!--============================== SHOP ===========================-->       
 <!--============================== FOOTER ===========================-->          
     <footer class="page-footer">
