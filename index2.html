@@ -30,30 +30,47 @@
                     <a href="index.html" class="brand-logo bold">My<span>GEN</span><div class="hide-on-small-only">Supplemented by TAAG Genetics</div></a>      
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="products.html">PRODUCTS</a></li>
+                        <li><a href="selectGoal.html">SELECT YOUR GOAL</a></li>
                         <li><a href="">HOW IT WORKS</a></li>
-                        <li><a href="success.html">SUCCESS STORIES</a></li>
                         <li><a href="become.html">BECOME A COACH</a></li>
-                        <li><a href="#!" id="shopbtn" class="modal-trigger"><span class="shop">SHOP NOW</span></a></li>
-                        <li><a href="#login" class="min-nav modal-trigger">LOGIN</a></li>
-                        <li><a href="activatekit.html" class="min-nav">ACTIVATE KIT</a></li>
+                        <li><a href="#!" id="shopbtn" class="modal-trigger">SHOP</a></li>
                         <li><a href="" id="shopping-cart-btn"><img src="img/icons/shopping-cart.svg" class="shopping-cart" alt="shopping-cart"><span class="shopping-cart-noti">0</span></a></li>
-                        <li><a href="" class="min-nav">HELP</a></li>
+                        <li><a href="activatekit.html" class="min-nav">ACTIVATE KIT</a></li>
+                        <li><a href="#login" class="min-nav modal-trigger"><span class="shop">LOGIN</span></a></li>
                     </ul>
                 </div>
             </nav>
         </div>
 <!-- mobile-demo -->    
         <ul class="sidenav" id="mobile-demo">
-                <li><a href="products.html">PRODUCTS</a></li>
-                <li><a href="">HOW IT WORKS</a></li>
-                <li><a href="success.html">SUCCESS STORIES</a></li>
-                <li><a href="become.html">BECOME A COACH</a></li>
-                <li><a href="#shop" id="shopbtn"><span>SHOP NOW</span></a></li>
-                <li><a href="#login" class="min-nav modal-trigger">SIGN IN</a></li>
-                <li><a href="activatekit.html" class="min-nav">ACTIVATE KIT</a></li>
-                <li><a href="" id="shopping-cart-btn"><img src="img/icons/shopping-cart.svg" class="shopping-cart" alt="shopping-cart"><span class="shopping-cart-noti">0</span></a></li>
-                <li><a href="" class="min-nav">Help</a></li>
+            <ul class="">
+                <li>
+                    <a href="selectGoal.html">SELECT YOUR GOAL</a>
+                </li>
+                <li>
+                    <a href="">HOW IT WORKS</a>
+                </li>
+                <li>
+                    <a href="become.html">BECOME A COACH</a>
+                </li>
+                <li>
+                    <a href="#!" id="shopbtn" class="modal-trigger">SHOP</a>
+                </li>
+                <li>
+                    <a href="" id="shopping-cart-btn">
+                        <img src="img/icons/shopping-cart.svg" class="shopping-cart" alt="shopping-cart">
+                        <span class="shopping-cart-noti">0</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="activatekit.html" class="min-nav">ACTIVATE KIT</a>
+                </li>
+                <li>
+                    <a href="#login" class="min-nav modal-trigger">
+                        <span class="">LOGIN</span>
+                    </a>
+                </li>
+            </ul>
         </ul>
 <!-- mobile-demo -->    
 <!--============================== FIN NAV ===========================--> 
@@ -63,41 +80,91 @@
 </div>
 
 <!--============================== SLIDER ===========================-->       
-    <div class="slider">
-        <ul class="slides">
-          <li>
-            <img src="img/slides/slide1.jpg" class="slide"> 
-            <img src="img/slides/slide1m.jpg" class="slideM"> 
-            <div class="caption left-align hide-on-med-and-down">
-                <h4 class="slide-text bold-text">
-                Genetic testing for<br>
-                personalized<br>
-                supplements
-                </h4>
-              <h6 class="slide-text light">Your are unique, so it should be<br>your supplements</h6><br>
-              <a href=""><span class="shop">SHOP NOW</span></a>
+   <div>
+        <div class="slider row">
+                <ul class="slides ">
+                  <li>
+                    <img src="img/slides/slide1.jpg" class="slide"> 
+                    <img src="img/slides/slide1m.jpg" class="slideM"> 
+                    <div class="caption left-align hide-on-med-and-down">
+                        <h4 class="slide-text bold-text">
+                                Select your goal and <br>
+                                get your personalized <br>
+                                genetically tailored supplement 
+                        </h4>
+                        <form action="selectGoal.html" class="formSlide">
+                            <div class="input-field col s2">
+                                <select id="categoryFormSlide" name="categoryFormSlide">
+                                    <option value="" disabled selected>Category</option>
+                                    <option value="1">SPORT</option>
+                                    <option value="2">NUTRI</option>
+                                    <option value="3">SKIN</option>
+                                    <option value="4">WELLNESS</option>
+                                </select>
+                                <label>Category</label>
+                            </div>
+                            <div class="input-field col s2">
+                                <select id="goalFormSlide" name="goalFormSlide">
+                                    <option value="" disabled selected>Goal</option>
+                                </select>
+                                <label>Goal</label>
+                            </div>
+                            <button type="submit" id="goSlide" class="col s1 orange waves-effect borderRadius15px  center-align btn-large white-text">
+                                GO!
+                            </button>
+                        </form>
+                        <div class="col s12 black-text infoForm">
+                            <span class="bold-text">Already a MyGEN member? </span> <br>
+                            <span><a href="#login" class="orange-text modal-trigger">Sign in here</a> to check your results, <br>
+                             recommendations or to add new genetic tests to your goa</span>
+                        </div>
+                    </div>
+                  </li>
+                  
+                </ul>
             </div>
-          </li>
-          
-        </ul>
-    </div>
+   </div>
 <!--============================== SLIDER ===========================-->
 
 <!--============================== MAIN ===========================--> 
 
 <main class="row">
 
-    <div class="center-align hide-on-large-only">
-        <h4 class="slide-text bold-text">
-        Genetic testing for<br>
-        personalized<br>
-        supplements
-        </h4>
-      <h6 class="slide-text light">Your are unique, so it should be<br>your supplements</h6><br>
-      <a href=""><span class="shop black-text">SHOP NOW</span></a>
-      <div class="col s12 divider marginTop30"></div>
+    <div class="center-align hide-on-large-only marginTop30">
+            <h5 class="slide-text bold-text">
+                    Select your goal and <br>
+                    get your personalized <br>
+                    genetically tailored supplement 
+            </h5>
+            <form action="selectGoal.html" class="marginTop30">
+                <div class="input-field col s5">
+                    <select id="categoryFormSlideM" name="categoryFormSlide">
+                        <option value="" disabled selected>Category</option>
+                        <option value="1">SPORT</option>
+                        <option value="2">NUTRI</option>
+                        <option value="3">SKIN</option>
+                        <option value="4">WELLNESS</option>
+                    </select>
+                    <label>Category</label>
+                </div>
+                <div class="input-field col s5">
+                    <select id="goalFormSlideM" name="goalFormSlide">
+                        <option value="" disabled selected>Goal</option>
+                    </select>
+                    <label>Goal</label>
+                </div>
+                <button type="submit" id="goSlide" class="col s2 orange waves-effect borderRadius15px  center-align btn-large white-text">
+                    GO!
+                </button>
+            </form>
+            <div class="col s12 black-text infoForm">
+                <span class="bold-text">Already a MyGEN member? </span> <br>
+                <span><a href="#login" class="orange-text modal-trigger">Sign in here</a> to check your results, <br>
+                 recommendations or to add new genetic tests to your goa</span>
+            </div>
     </div>
  
+    <div class="col s12 divider"></div>
 
     <div id="firstMain" class="col s12 center-align">
         <div class="container">
@@ -162,7 +229,271 @@
             </div>
         </div>
     </div>
+    <div class="col s12" id="supplements">
+        <div class="container2">
+            <div class="col s12 m4 white-text discover">
+                <h5 class="centerFull">
+                    <span class="bold-text">          
+                    DISCOVER A BETTER WAY: </span> <br>
+                    MONTHLY SUBSCRIPTION OF <br>
+                    PERSONALIZED GENETIC  <br>
+                    BASED SUPPLEMENTS <br>
+                </h5>
+            </div>
 
+            <div class="col s12 m4 padding15 center-align supplementsCard">
+                <div class="col s12 orange headerSupp marginTop30">
+                    <h5>MyGEN supplements </h5>
+                </div>
+                <div class="col s12 white left-align">
+                    <p class="bold-text">Includes:</p>
+                    <ol>
+                        <li>At home saliva sampling kit </li>
+                        <li>Initial genetic testing and genetic report</li>
+                        <li>Every month, at home personalized supplement and 
+                        dietary supplement report </li>
+                        <li>Access to web platform to share your goal results</li>
+                        <li>New genetic testing every three months according to goal results  </li>
+                        <li>Every three months supplement optimization</li>
+                        <li>
+                            Option of adding new genetic tests in your goal and 
+                            supplement formulation at anytime
+                        </li>
+                    </ol>
+                </div>
+                <div class="col s12 grey lighten-2">
+                        Monthly price
+                </div>
+                <div class="col s12 white paddingTop15 right-align">
+                    <div class="col s12 m8">
+                        <p>
+                                Monthly personalized supplement plus 
+                                genetic testing and supplement 
+                                reformulation every three months                            
+                        </p>
+                    </div>
+                    <div class="col s12 m12 l4 center-align paddingTop15">
+                            <h5 class="bold-text">$49,900</h5>
+                            <h6 class="grey-text tachado">$69.900</h6>
+                    </div>
+                </div>
+
+                <div class="col s12 white right-align min-text">
+                    <div class="col s12 m4 push-m8 center-align">
+                            You can cancel <br>
+                                at anytime
+                    </div>
+                </div>
+                <div class="col s12 center-align white footerSupp">
+                    <a href="selectGoal.html" class="shop black-text"> SELECT YOUR GOAL</a>
+                </div>
+            </div>
+
+            <div class="col s12 m4 padding15 center-align">
+                <div class="col s12 white headerSupp marginTop30 black-text">
+                    <h5>Not ready yet?</h5>
+                </div>
+                <div class="col s12 white black-text">
+                    <p>
+                        Select your goal and genetic tests for a one month personalized supplement specially made for you based on your genetics
+                        and goals
+                    </p>
+                </div>
+                <div class="col s12 white paddingTop15 left-align">
+                    <p class="bold-text">Includes:</p>
+                    <ol>
+                        <li>At home saliva sampling kit </li>
+                        <li>Initial genetic testing and genetic report</li>
+                        <li>One month of personalized supplement and dietary supplement report(see sample )</li>
+                        <li>Option of adding new genetic tests in your goal and supplement formulation at anytime</li>
+                    </ol>
+                </div>
+                <div class="col s12 grey lighten-2">
+                    Unit price (discounts apply for buying several items)
+                </div>
+                <div class="col s12 white right-align paddingTop15">
+                        <div class="col s12 m8 min-text2">
+                            <p>
+                                    Genetic test                            
+                            </p>
+                        </div>
+                        <div class="col s12 m12 l4 center-align paddingTop15">
+                            <h5 class="bold-text">$39,900</h5>
+                        </div>
+                </div>
+                <div class="col s12 white  right-align min-text2">
+                        <div class="col s12 m8 min-text2">
+                            <p>
+                                1 month of personalized supplement                            
+                            </p>
+                        </div>
+                        <div class="col s12 m12 l4 center-align">
+                            <h5 class="bold-text">$49,900</h5>
+
+                        </div>
+                </div>      
+                <div class="col s12 white  right-align min-text2">
+                    <div class="col s12 m8 min-text2">
+                        <p>
+                                Genetic testing plus 
+                                1 month of
+                                personalized supplement
+                        </p>
+                    </div>
+                    <div class="col s12 m12 l4 center-align">
+                        <h5 class="bold-text">$69,900</h5>
+                        <h6 class="grey-text tachado">$89.900</h6>
+                    </div>
+                </div>
+                <div class="col s12 center-align white footerSupp">
+                    <a href="selectGoal.html" class="shop black-text"> SELECT YOUR GOAL</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col s12 " id="ask">
+        <div class="col s12 container2 marginTop30 marginBotom30">
+            <div class="col s12 m7">
+                <ul class="collapsible">
+                    <li class="padding15">
+                        <div class="collapsible-header col s12 grey lighten-5 ">
+                            What is MyGEN supplements?
+                            <i class="material-icons right">add</i>
+                        </div>
+                        <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li class="padding15">
+                        <div class="collapsible-header col s12 grey lighten-5 ">
+                            Can I cancel my subscription at any time?
+                            <i class="material-icons right">add</i>
+                        </div>
+                        <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li class="padding15">
+                        <div class="collapsible-header col s12 grey lighten-5 ">
+                            Is there a minimum number of genetic tests or supplements
+                            I have to subscribe to?
+                            <i class="material-icons right">add</i>
+                        </div>
+                        <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li class="padding15">
+                        <div class="collapsible-header col s12 grey lighten-5 ">
+                            What is MyGEN supplements?
+                            <i class="material-icons right">add</i>
+                        </div>
+                        <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li class="padding15">
+                        <div class="collapsible-header col s12 grey lighten-5 ">
+                            Can I cancel my subscription at any time?
+                            <i class="material-icons right">add</i>
+                        </div>
+                        <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li class="padding15">
+                        <div class="collapsible-header col s12 grey lighten-5 ">
+                            Is there a minimum number of genetic tests or supplements
+                            I have to subscribe to?
+                            <i class="material-icons right">add</i>
+                        </div>
+                        <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li class="padding15">
+                        <div class="collapsible-header col s12 grey lighten-5 ">
+                            What is MyGEN supplements?
+                            <i class="material-icons right">add</i>
+                        </div>
+                        <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li class="padding15">
+                        <div class="collapsible-header col s12 grey lighten-5 ">
+                            Can I cancel my subscription at any time?
+                            <i class="material-icons right">add</i>
+                        </div>
+                        <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li class="padding15">
+                        <div class="collapsible-header col s12 grey lighten-5 ">
+                            Is there a minimum number of genetic tests or supplements
+                            I have to subscribe to?
+                            <i class="material-icons right">add</i>
+                        </div>
+                        <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li class="padding15">
+                        <div class="collapsible-header col s12 grey lighten-5 ">
+                            What is MyGEN supplements?
+                            <i class="material-icons right">add</i>
+                        </div>
+                        <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li class="padding15">
+                        <div class="collapsible-header col s12 grey lighten-5 ">
+                            Can I cancel my subscription at any time?
+                            <i class="material-icons right">add</i>
+                        </div>
+                        <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                    <li class="padding15">
+                        <div class="collapsible-header col s12 grey lighten-5 ">
+                            Is there a minimum number of genetic tests or supplements
+                            I have to subscribe to?
+                            <i class="material-icons right">add</i>
+                        </div>
+                        <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col s12 m5 center-align marginTop30">
+                   <h5 class="bold-text">
+                    SOME THINGS CANNOT BE <br>
+                    PERSONALIZED... 
+                   </h5>
+                   <br>
+                   <h5 class="bold-text">
+                        FREQUENTLY ASKED  <br>
+                        QUESTIONS
+                   </h5>
+
+            </div>
+            <div class="col s12 m5 center-align marginTop100">
+                <hr class="col s12 orange-text">
+                <p>
+                    More questions? Email our MyGEN Team with any other 
+                    questions or feedback you have
+                </p>
+                <a href="" class="shop black-text">GET IN TOUCH</a>
+            </div>
+        </div>
+    </div>
     <div class="col s12 center-align" id="thirdMain">
         <div class="container">
             <p class="bold-text">OUR COMMITMENT</p>
@@ -215,7 +546,7 @@
         <div class="modal-content center-align rotateOutDownLeft row padding0 paddingTop15 ">
                 <div class="col s12 center">
                         <div class="input-field col s12 m5">
-                            <select id="categoryForm">
+                            <select id="categoryForm" name="categoryForm"">
                                 <option value="" disabled selected>Category</option>
                                 <option value="1">SPORT</option>
                                 <option value="2">NUTRI</option>
@@ -225,7 +556,7 @@
                             <label>Category</label>
                         </div>
                         <div class="input-field col s12 m5">
-                            <select id="goalForm">
+                            <select id="goalForm" name="goalForm">
                                 <option value="" disabled selected>Goal</option>
                             </select>
                             <label>Goal</label>
@@ -466,6 +797,7 @@
     <script src="js/alertify.min.js"></script>
     <script src="js/validate.js"></script>
     <script src="js/shopMobile.js"></script>
+    <script src="js/formSlide.js"></script>
     <script src="sw.js"></script>
     <script>
       $(document).ready(function(){
@@ -475,6 +807,7 @@
                 indicators: false,
                 height: 410
             });
+            $('.collapsible').collapsible();
             new WOW().init();
             $('#login').modal();
             $('#shop').modal();          

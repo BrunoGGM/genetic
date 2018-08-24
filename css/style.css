@@ -683,10 +683,25 @@ nav .brand-logo div {
     background-color: rgba(234, 131, 31, 0.6);
 }
 
+.paddingTop50{
+    padding-top: 50px;
+}
+
+.borderBottomLeftRadius50{
+    border-bottom-left-radius: 15px;
+}
+
+.borderBottomRightRadius50{
+    border-bottom-right-radius: 15px;
+}
+.minGoal{
+    min-height: 300px !important;
+}
+
 #selectGoals {
     background-color: rgba(255, 255, 255, 0.6);
     min-height: 666px;
-    display: inline-table;
+    display: block;
 }
 
 .collapsible {
@@ -881,7 +896,83 @@ display: flex;
 .marginBotom30{
     margin-bottom: 30px;
 }
+.tachado{text-decoration:line-through;}
+.padding0{
+    padding: 0 !important;
+}
+.paddingTop15{
+    padding-top: 15px !important;
+}
+.paddingBottom15{
+    padding-bottom: 15px !important;
+}
 
+.formSlide li {
+    opacity: 1 !important;
+    position: unset !important;
+    height: auto !important;
+    overflow: initial !important;
+    font-weight: normal !important;
+}
+.formSlide .dropdown-content {
+    top: -450% !important;
+}
+.infoForm{
+    font-weight: normal !important;
+    font-size: 8pt;
+}
+.borderRadius15px{
+    border-radius: 15px;
+}
+
+#supplements{
+    background-image: url('../img/bgSupplements.jpg');
+}
+#supplements ol{
+    padding: 10px;
+}
+#supplements li{
+    margin-top: 10px;
+    list-style-type: none;
+}
+.marginTop100{
+    margin-top: 100px;
+}
+#supplements  li::before {
+    content: "✓ ";
+    color:orange; /* or whatever color you prefer */
+  }
+.centerFull{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.headerSupp{
+    border-top-left-radius: 25px;
+padding: 15px !important;
+border-top-right-radius: 25px;
+color: white;
+
+
+}
+
+.discover{
+    height: 600px;
+}
+.footerSupp{
+    padding-top: 30px !important;
+padding-bottom: 30px !important;
+margin-bottom: 30px;
+border-bottom-left-radius: 25px;
+border-bottom-right-radius: 25px;
+}
+.topBorderM{
+    border: 1px grey solid;
+    border-top: 15px orange solid;
+    border-radius: 5px;
+}
 .quote-rigth{
     border-right: 6px #ababab solid;
 height: 200px;
@@ -1196,16 +1287,17 @@ display: none;
     }
     .shopMobile{
         position: fixed;
-        bottom: 0;
-        height: 56px;
+        top: 16px;
         text-align: center;
-        background-color: orange;
-        width: 100%;
-        z-index: 99;
-        color: white;
-        font-size: 24px;
-        line-height: 56px;
+        background-color: white;
+        z-index: 997;
+        color: black;
+        font-size: 12pt;
         box-shadow: 0px -5px 10px -11px rgba(38,38,38,1);
+        right: 3%;
+        border: 3px orange solid;
+        padding: 6px 15px 6px 15px;
+        border-radius: 13px;
         
     }
     .shopMobileContent{
