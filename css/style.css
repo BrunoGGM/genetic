@@ -533,7 +533,13 @@ nav .brand-logo div {
     height: 70px;
     width: 70px;
 }
+
 #secondMainImgP img {
+    padding: 8px 8px 8px 8px;
+    height: 70px;
+    width: 70px;
+}
+#secondMainImgP object {
     padding: 8px 8px 8px 8px;
     height: 70px;
     width: 70px;
