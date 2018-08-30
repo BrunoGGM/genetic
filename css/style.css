@@ -374,23 +374,28 @@ nav .brand-logo div {
     margin-top: 15px;
 }
 
+
+.tool{
+    font-size: 18px !important;
+    position: absolute;
+}
 /*impares*/
 
 .goalsTable div:nth-child(2n+1) {
-    border: 1px #e69221 solid;
+    border: 2px #e69221 solid;
     color: #e69221;
-    padding: 8px;
+    padding: 12px;
     margin: 5px;
-    height: 49px;
+    min-height: 50px;
 }
 
 /*pares*/
 
 .goalsTable div:nth-child(2n) {
     border: 1px black solid;
-    padding: 8px;
-    margin: 5px;
-    min-height: 49px;
+    padding: 20px 0px 0px 0px;
+    margin: 0px;
+    min-height: 50px;
 }
 
 .goalsTableContent div:nth-child(2n+1) {
@@ -406,6 +411,7 @@ nav .brand-logo div {
     padding: 0px;
     margin: 0px;
 }
+
 
 .shop {
     padding: 8px 21px 8px 21px;
@@ -589,7 +595,22 @@ nav .brand-logo div {
     font-weight: bold;
     border-bottom: 4px #e69221 solid;
 }
+[type="checkbox"] + span:not(.lever)::before, [type="checkbox"]:not(.filled-in) + span:not(.lever)::after {
 
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    border: 0px solid #5a5a5a;
+    border-radius: 1px;
+    margin-top: 3px;
+    -webkit-transition: .2s;
+    transition: .2s;
+
+}
 #yourSuccess {
     padding: 50px 0px 50px 0px;
     background-color: #f9fafa;
@@ -642,6 +663,7 @@ nav .brand-logo div {
     width: 100%;
     padding: 0px;
     background-size: cover;
+    background-position-x: 25%;
 }
 
 #sportTable>div {
@@ -653,6 +675,7 @@ nav .brand-logo div {
     width: 100%;
     padding: 0px;
     background-size: cover;
+    background-position-x: 40%;
 }
 
 #weightTable>div {
@@ -664,6 +687,7 @@ nav .brand-logo div {
     width: 100%;
     padding: 0px;
     background-size: cover;
+    background-position-x: 25%;
 }
 
 #beautyTable>div {
@@ -675,6 +699,7 @@ nav .brand-logo div {
     width: 100%;
     padding: 0px;
     background-size: cover;
+    background-position-x: 25%;
 }
 
 #wellnessTable>div {
@@ -691,6 +716,10 @@ nav .brand-logo div {
 
 .paddingTop50{
     padding-top: 50px;
+}
+
+.collapsible-header{
+    background-color: transparent;
 }
 
 .borderBottomLeftRadius50{
@@ -1446,6 +1475,61 @@ display: none;
 
 @media(max-width: 600px) {
 
+
+    #sportTable {
+        background-image: none;
+        width: 100%;
+        padding: 0px;
+        background-size: cover;
+        background-position-x: 25%;
+        background-color: rgb(240, 240, 240);
+       
+
+    }
+
+    #life {
+        padding: 30px;
+        background-color: red;
+        width: 100%;
+        background-color: rgba(234, 131, 31, 0.6);
+    }
+    
+    #life br{
+        display: none;
+    }
+    
+    
+    #weightTable {
+        background-image: none;
+        width: 100%;
+        padding: 0px;
+        background-size: cover;
+        background-position-x: 40%;
+        background-color: rgb(240, 240, 240);
+    }
+    
+    #beautyTable {
+        background-image:none;
+        width: 100%;
+        padding: 0px;
+        background-size: cover;
+        background-position-x: 25%;
+        background-color: rgb(240, 240, 240);
+
+    }
+    
+
+    #wellnessTable {
+        background-image: none;
+        width: 100%;
+        padding: 0px;
+        background-size: cover;
+        background-position-x: 25%;
+        background-color: rgb(240, 240, 240);
+
+
+    }
+
     nav .brand-logo div {
         width: 185px;
         padding: 0px 0px 0px 0px;
@@ -1580,7 +1664,7 @@ display: none;
         border: 1px black solid;
         padding: 0px !important;
         margin: 0px !important;
-        min-height: 49px;
+        min-height: 50px;
     }
     .goalsTable div:nth-child(2n+1) {
 
@@ -1588,7 +1672,7 @@ display: none;
         color: #e69221;
         padding: 0px !important;
         margin: 0px !important;
-        height: 50px;
+        min-height: 50px;
     
     }
         .goalsTableContent{
