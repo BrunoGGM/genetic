@@ -56,6 +56,12 @@ main {
     border-right: 2px dashed;
     margin-bottom: 30px;
 }
+#ask .collapsible-header{
+    width: 100%;
+    margin: 2px 0px 2px 0px !important; 
+    background-color: #f8f8f8 !important;  
+    padding: 15px !important;
+}
 
 #unlock {
     padding: 30px 20px 30px 20px;
@@ -193,6 +199,14 @@ main {
 .social-footer {
     background-color: white;
     padding: 5px;
+}
+
+.social-footer img{
+    background-color: #000;
+    border: 1px #413f3a solid;
+    border-radius: 50%;
+    height: 32px;
+    margin: 3px;
 }
 
 .next {
@@ -413,15 +427,27 @@ nav .brand-logo div {
 }
 
 
+
 .shop {
-    padding: 8px 21px 8px 21px;
+    padding: 8px 21px 8px 21px ;
     border-radius: 10px;
     border: 2px #e69221 solid;
     cursor: pointer;
     font-size: 8pt;
     transition: .3s;
+    text-align: center;
 }
 
+#shop .shop{
+    padding: 8px 21px 8px 21px ;
+    border-radius: 10px;
+    border: 2px #e69221 solid;
+    cursor: pointer;
+    font-size: 8pt;
+    transition: .3s;
+    text-align: center;
+    display: block;   
+}
 .shopWhite {
     padding: 6px 25px 7px 25px;
     border-radius: 10px;
@@ -720,6 +746,30 @@ nav .brand-logo div {
 
 .collapsible-header{
     background-color: transparent;
+}
+
+#footerMobile .collapsible-header{
+    width: 100%;
+    margin: 2px 0px 2px 0px !important;
+    background-color: #f8f8f8 !important;
+    padding: 15px !important;
+}
+
+#footerMobile .collapsible{
+    padding: 0px !important;
+}
+
+#footerMobile .shop{
+    
+
+    padding: 8px 21px 8px 21px !important;
+    border-radius: 10px;
+    border: 2px #e69221 solid;
+    cursor: pointer;
+    font-size: 8pt;
+    transition: .3s;
+    text-align: center;
+
 }
 
 .borderBottomLeftRadius50{

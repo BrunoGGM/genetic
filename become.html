@@ -444,7 +444,7 @@
 </div>
 <!--============================== SHOP ===========================-->      
 <!--============================== FOOTER ===========================-->          
-    <footer class="page-footer">
+<footer class="page-footer hide-on-small-only">
         <div class="footer">
         <div class="row">
             <div class="col l3 s12">
@@ -524,6 +524,86 @@
     </footer>
 <!--============================== FOOTER ===========================-->          
 
+<!--============================== FOOTER MOBILE===========================-->   
+
+<div class="row hide-on-med-and-up" id="footerMobile">
+    <ul class="col s12 collapsible">
+        <li>
+          <div class="collapsible-header "><i class="material-icons right">add</i>ABOUT</div>
+          <div class="collapsible-body">
+                <div class="col s12 center-align">
+                    <a href="#!" class="brand-logo bold">My<span class="grey-text">GEN</span><div class="grey-text marginBotom30">Supplemented by TAAG Genetics</div></a> 
+                </div>
+            <ul class="marginBotom30">
+                  <li class="min-text3">PRODUCTS</li>
+                  <li><a href="" class="grey-text">Genetic tests</a></li>
+                  <li><a href="" class="grey-text">Supplements</a></li>
+                  <li><a href="" class="grey-text">How it works</a></li>
+                  <li><a href="" class="grey-text">Success stories</a></li>             
+            </ul>
+            <ul class="marginBotom30">
+                <li class="min-text3">COMPANY</li>
+                <li><a href="" class="grey-text">About</a></li>
+                <li><a href="" class="grey-text">Blog</a></li>
+                <li><a href="" class="grey-text">Contact</a></li>         
+            </ul>
+            <ul class="marginBotom30">
+                <li class="min-text3">RESOURCES</li>
+                <li><a href="" class="grey-text">Help</a></li>
+                <li><a href="" class="grey-text">Privacy policy</a></li>
+                <li><a href="" class="grey-text">Terms of use</a></li>         
+            </ul>    
+            <ul class="marginBotom30">
+                <li class="min-text3">PARTNERS</li>
+                <li><a href="" class="grey-text">Become a coach</a></li>      
+            </ul>     
+            <ul class="marginBotom30">
+                <li class="min-text3">RELATED PRODUCTS</li>
+                <li><a href="" class="grey-text">Ancestry</a></li>      
+                <li><a href="" class="grey-text">Pharmacogenetics</a></li>      
+            </ul> 
+            <ul>
+                <li class="min-text3">LEGAL</li>
+                <li><a href="" class="grey-text">Privacy policy</a></li>
+                <li><a href="" class="grey-text">Terms of use</a></li>
+                <li><a href="contact.html" class="grey-text">Contact</a></li>
+            </ul>                             
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons right">add</i>NEWSLETTER</div>
+          <div class="collapsible-body">
+                <p class="bold-text">CURIOUS TO LEARN MORE?</p>
+                <p>Join our newsletter to receive updates on actionable genetics</p>
+                <form action="" id="formFooter" name="formFooter">
+                        <div class="input-field col s7">
+                            <input placeholder="YourEmail" id="" type="text" class="validate">           
+                        </div>
+                        <a href="" class="shop black-text col s4 push-s1">Sign Up</a>
+                       
+                </form>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons right">add</i>CONNECT WITH US</div>
+          <div class="collapsible-body">
+                <div class="social-footer center-align">
+                    <a href=""><img src="img/icons/twitter-logo-button.svg" alt=""></a>
+                    <a href=""><img src="img/icons/facebook-logo-button.svg" alt=""></a>
+                    <a href=""><img src="img/icons/instagram-logo.svg" alt=""></a>
+                </div>  
+          </div>
+        </li>
+      </ul>
+</div>
+<div class="footer-copyright white paddingBottom15 hide-on-med-and-up">
+    <div class="container left-align min-text2 grey-text">
+        2018 © TAAG Genetics. All rights reserved
+    </div>
+</div>
+        
+<!--============================== FOOTER MOBILE===========================-->        
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/addCart.js"></script>
@@ -542,6 +622,8 @@
             $('.modal').modal();
             $('#login').modal();
             $('#shop').modal();
+            $('.collapsible').collapsible();        
+
 
         });
     </script>

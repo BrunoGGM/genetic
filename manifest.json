@@ -1,6 +1,7 @@
 {
-  "short_name": "MyGEN",
   "name": "MyGEN",
+  "short_name": "MyGEN",
+  "description": "Progressive Web App",
   "icons": [
     {
       "src": "favicon.png",
